@@ -1,5 +1,5 @@
 "message","severity","solution1","solution2","solution3"
-"Warning: 40percentclub/25: Missing layout pp macro for ['ortho_5x5', 'ortho_5x10']","warning","alias LAYOUT_macro","alias LAYOUT_split",
+"Warning: 40percentclub/25: Missing layout pp macro for ['ortho_5x5', 'ortho_5x10']","warning","alias LAYOUT_macro;alias LAYOUT_split",,
 "Warning: 40percentclub/foobar: Missing layout pp macro for ['ortho_3x10']","warning","alias LAYOUT_macro",,
 "Warning: bigseries: Falling back to searching for KEYMAP/LAYOUT macros.","warning","Parent directory.",,
 "Error: clueboard/66_hotswap/gen1: LAYOUT: Number of elements in info.json does not match! info.json:73 != LAYOUT:70","error","Two extra keys in layout macro; Five extra in info.json. Fixed in cf/clueboard66hs",,
@@ -29,4 +29,4 @@
 "Warning: subatomic: Falling back to searching for KEYMAP/LAYOUT macros.","warning","no layout macro",,
 "Warning: subatomic does not have a readme.md.","warning","no readme",,
 "Warning: vision_division: Falling back to searching for KEYMAP/LAYOUT macros.","warning","no layout macro",,
-"Warning: zlant: Missing layout pp macro for ['ortho_4x12']","warning","alias LAYOUT",,
+"Warning: zlant: Missing layout pp macro for ['ortho_4x12']","warning","alias LAYOUT","Updated info.json to use alias name.",
