@@ -2,7 +2,7 @@
 "Warning: 40percentclub/25: Missing layout pp macro for ['ortho_5x5', 'ortho_5x10']","warning","alias LAYOUT_macro","alias LAYOUT_split",
 "Warning: 40percentclub/foobar: Missing layout pp macro for ['ortho_3x10']","warning","alias LAYOUT_macro",,
 "Warning: bigseries: Falling back to searching for KEYMAP/LAYOUT macros.","warning","Parent directory.",,
-"Error: clueboard/66_hotswap/gen1: LAYOUT: Number of elements in info.json does not match! info.json:73 != LAYOUT:70","error",,,
+"Error: clueboard/66_hotswap/gen1: LAYOUT: Number of elements in info.json does not match! info.json:73 != LAYOUT:70","error","Two extra keys in layout macro; Five extra in info.json. Fixed in cf/clueboard66hs",,
 "Error: dichotomy: LAYOUT: Number of elements in info.json does not match! info.json:48 != LAYOUT:50","error","mismatch: info.json missing 2 keys",,
 "Warning: duck/eagle_viper: Missing layout pp macro for ['60_ansi']","warning","alias LAYOUT_eagle",,
 "Warning: ergo42: Missing layout pp macro for ['ortho_4x14']","warning","alias LAYOUT",,
