@@ -25,7 +25,7 @@
 "Error: preonic/rev3: KEYMAP: Number of elements in info.json does not match! info.json:59 != KEYMAP:60","error",,,
 "Warning: proton_c: Falling back to searching for KEYMAP/LAYOUT macros.","warning","no layout macro",,
 "Warning: ps2avrGB: Falling back to searching for KEYMAP/LAYOUT macros.","warning","needs refactoring",,
-"Error: s7_elephant: LAYOUT_iso_1u: Number of elements in info.json does not match! info.json:75 != LAYOUT_iso_1u:74","error","mismatch: info.json has 1 extra key",,
+"Error: s7_elephant: LAYOUT_iso_1u: Number of elements in info.json does not match! info.json:75 != LAYOUT_iso_1u:74","error","mismatch: info.json has 1 extra key","Fixed in #4614",
 "Warning: subatomic: Falling back to searching for KEYMAP/LAYOUT macros.","warning","no layout macro",,
 "Warning: subatomic does not have a readme.md.","warning","no readme",,
 "Warning: vision_division: Falling back to searching for KEYMAP/LAYOUT macros.","warning","no layout macro",,
