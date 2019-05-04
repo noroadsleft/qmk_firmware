@@ -7,6 +7,8 @@ This is a keyboard that Clueboard releases for a 1-day group buy every Apr 1. Ea
 - [2018:](2018/) Double 1800 All The Way
 - [2019:](2019/) Mechanical Drawing Toy Edition
 
+  
+
 - Keyboard Maintainer: [Zach White](https://github.com/skullydazed)
 - Hardware Supported: Clueboard 2x1800 PCB
 - Hardware Availability: 2018 Apr 1 Group Buy
