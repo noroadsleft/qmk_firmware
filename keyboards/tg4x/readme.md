@@ -1,8 +1,9 @@
 # tg4x
 
-![tg4x](https://imgur.com/gallery/OM9EhMF)
+![tg4x](https://i.imgur.com/ysdwhnU.png)
+[Image Gallery](https://imgur.com/gallery/OM9EhMF)
 
-The dirt cheap 40%
+The dirt cheap 40%.
 
 Keyboard Maintainer: [mythosmann](https://github.com/mythosmann)  
 Hardware Supported: tg4x pcb, pro micro  
