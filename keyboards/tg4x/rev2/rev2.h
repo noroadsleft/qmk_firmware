@@ -98,3 +98,5 @@ split spacebar ansi layout
     { K27,    K28,  K29,  K2A,    K2B,  KC_NO,  KC_NO }, \
     { KC_NO,  K38,  K39,  K3A,    K3B,  KC_NO,  KC_NO }, \
 }
+
+#define LAYOUT LAYOUT_tg3

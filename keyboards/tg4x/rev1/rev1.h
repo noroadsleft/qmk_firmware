@@ -41,3 +41,5 @@ Tells the matrix what's where.
     { K20,  K21, K22,  K23,    K24,    K25,  K26,    K27,    K28,  K29,  K2A,  K2B,  KC_NO }, \
     { K30,  K31, K32,  KC_NO,  KC_NO,  K35,  KC_NO,  KC_NO,  K38,  K39,  K3A,  K3B,  KC_NO }, \
 }
+
+#define LAYOUT_tg3 LAYOUT
