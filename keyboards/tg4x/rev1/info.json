@@ -1,11 +1,12 @@
 {
-    "keyboard_name": "TG4x",
+    "keyboard_name": "TG4x rev. 1",
     "url": "https://github.com/MythosMann/tg4x",
     "maintainer": "qmk",
     "width": 13,
     "height": 4,
     "layouts": {
         "LAYOUT": {
+            "key_count": 45,
             "layout": [
                 {"label":"Esc", "x":0, "y":0},
                 {"label":"Q", "x":1, "y":0},
@@ -31,8 +32,8 @@
                 {"label":"K", "x":8.25, "y":1},
                 {"label":"L", "x":9.25, "y":1},
                 {"label":":", "x":10.25, "y":1},
-                {"label":"&crarr;", "x":11.25, "y":1, "w":1.75},
-                {"label":"&uArr;", "x":0, "y":2, "w":1.75},
+                {"label":"Enter", "x":11.25, "y":1, "w":1.75},
+                {"label":"Shift", "x":0, "y":2, "w":1.75},
                 {"label":"Z", "x":1.75, "y":2},
                 {"label":"X", "x":2.75, "y":2},
                 {"label":"C", "x":3.75, "y":2},
@@ -43,15 +44,15 @@
                 {"label":"<", "x":8.75, "y":2},
                 {"label":">", "x":9.75, "y":2},
                 {"label":"?", "x":10.75, "y":2},
-                {"label":"&uArr;", "x":11.75, "y":2, "w":1.25},
+                {"label":"Shift", "x":11.75, "y":2, "w":1.25},
                 {"label":"Ctrl", "x":0, "y":3},
                 {"label":"Alt", "x":1, "y":3},
                 {"label":"Tab", "x":2, "y":3},
-                {"x":3, "y":3, "w":6},
+                {"label":"Space", "x":3, "y":3, "w":6},
                 {"label":"Fn", "x":9, "y":3},
-                {"label":"&larr;", "x":10, "y":3},
-                {"label":"&uarr;", "x":11, "y":3},
-                {"label":"&rarr;", "x":12, "y":3}
+                {"label":"Left", "x":10, "y":3},
+                {"label":"Up", "x":11, "y":3},
+                {"label":"Right", "x":12, "y":3}
             ]
         }
     }
