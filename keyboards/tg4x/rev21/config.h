@@ -1,5 +1,5 @@
 /*
-Copyright 2018 REPLACE_WITH_YOUR_NAME
+Copyright 2018 mythosmann
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x0001
 #define DEVICE_VER      0x0021
-#define MANUFACTURER    jlcpcb
+#define MANUFACTURER    mythosmann
 #define PRODUCT         tg4x
 #define DESCRIPTION     a cheap 40%
 
@@ -83,7 +83,7 @@ You can change the brightness, step settings, and animations.
  #endif
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCING_DELAY 5
+#define DEBOUNCE 5
 
 /* define if matrix has ghost (lacks anti-ghosting diodes) */
 //#define MATRIX_HAS_GHOST
