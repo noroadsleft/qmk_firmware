@@ -8,15 +8,15 @@ Vous voulez savoir si votre clavier peut utiliser QMK? Si c'est un clavier méca
 
 Il y a 7 sections principales dans ce guide:
 
-* [Pour débuter](fr-FR/newbs_getting_started.md)
-* [Compiler votre premier firmware en utilisant la ligne de commande](fr-FR/newbs_building_firmware.md)
-* [Compiler votre premier firmware en utilisant l'interface graphique en ligne](fr-FR/newbs_building_firmware_configurator.md)
-* [Flasher le Firmware](fr-FR/newbs_flashing.md)
-* [Test et Débuggage](fr-FR/newbs_testing_debugging.md)
-* [Bonnes pratiques Git](fr-FR/newbs_best_practices.md)
-* [Ressources d'apprentissage](fr-FR/newbs_learn_more_resources.md)
+* [Pour débuter](fr-fr/newbs_getting_started.md)
+* [Compiler votre premier firmware en utilisant la ligne de commande](fr-fr/newbs_building_firmware.md)
+* [Compiler votre premier firmware en utilisant l'interface graphique en ligne](fr-fr/newbs_building_firmware_configurator.md)
+* [Flasher le Firmware](fr-fr/newbs_flashing.md)
+* [Test et Débuggage](fr-fr/newbs_testing_debugging.md)
+* [Bonnes pratiques Git](fr-fr/newbs_best_practices.md)
+* [Ressources d'apprentissage](fr-fr/newbs_learn_more_resources.md)
 
-Ce guide a pour but principal d'aider quelqu'un qui n'a jamais compilé de logiciel avant. Les recommandations et les choix qu'il contient vont donc dans ce sens. Il y a des méthodes alternatives pour beaucoup de ces procédures, et nous supportons la plupart de ces alternatives. Si vous avez un doute sur comment accomplir une tâche, vous pouvez [nous demander de l'aide](fr-FR/getting_started_getting_help.md).
+Ce guide a pour but principal d'aider quelqu'un qui n'a jamais compilé de logiciel avant. Les recommandations et les choix qu'il contient vont donc dans ce sens. Il y a des méthodes alternatives pour beaucoup de ces procédures, et nous supportons la plupart de ces alternatives. Si vous avez un doute sur comment accomplir une tâche, vous pouvez [nous demander de l'aide](fr-fr/getting_started_getting_help.md).
 
 ## Ressources additionnelles
 

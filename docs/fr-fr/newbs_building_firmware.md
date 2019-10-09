@@ -78,4 +78,4 @@ Checking file size of planck_rev5_xyverz.hex                                    
 
 ## Flasher votre firmware
 
-Allez sur la page [Flasher le firmware](fr-FR/newbs_flashing.md) pour apprendre comment écrire votre nouveau firmware sur votre clavier.
+Allez sur la page [Flasher le firmware](fr-fr/newbs_flashing.md) pour apprendre comment écrire votre nouveau firmware sur votre clavier.

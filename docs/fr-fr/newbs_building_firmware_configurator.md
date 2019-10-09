@@ -75,7 +75,7 @@ Une fois la compilation terminée, vous pourrez appuyer sur le bouton vert `Down
 
 ## Ecrire votre firmware sur votre clavier
 
-Merci de vous référer à [Flasher le Firmware](fr-FR/newbs_flashing.md)
+Merci de vous référer à [Flasher le Firmware](fr-fr/newbs_flashing.md)
 
 ## Dépannage
 
