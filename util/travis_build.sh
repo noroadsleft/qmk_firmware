@@ -2,7 +2,11 @@
 
 source util/travis_utils.sh
 
+echo -e "$QMK_CHANGES"
+
 NUM_CORE_CHANGES=$(echo "$QMK_CHANGES" | grep -Ecv -e '^(docs/)' -e '^(keyboards/)' -e '^(layouts/)' -e '^(util/)' -e '^(lib/python/)' -e '^(bin/qmk)' -e '^(requirements.txt)' -e '(.travis.yml)')
+
+echo -e "$NUM_CORE_CHANGES"
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"[skip build]"* ]]; then
     echo "Skipping due to commit message"
