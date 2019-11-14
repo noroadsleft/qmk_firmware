@@ -10,7 +10,6 @@ TRAVIS_COMMIT_RANGE="${TRAVIS_COMMIT_RANGE:-HEAD~1..HEAD}"
 #TRAVIS_COMMIT_RANGE="c287f1bfc5c8...81f62atc4c1d"
 
 # Extra variables
-LOCAL_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 QMK_CHANGES=$(git diff --name-only -n 1 ${TRAVIS_COMMIT_RANGE})
 
 # if docker is installed - patch calls to within the qmk docker image
