@@ -41,8 +41,8 @@ then
     BRANCH_BASE=$(git merge-base ${CURRENT_MASTER} ${TRAVIS_BRANCH})
     echo -e "The latest common ancestor of \e[33mqmk:master\e[0m and \e[33mthis branch\e[0m is \e[32m$BRANCH_BASE\e[0m"
     #git rev-list --left-right --count $TRAVIS_BRANCH...$TRAVIS_PULL_REQUEST_SHA
-else
-    #####################
-    # Triggered by push #
-    #####################
+# else
+#     #####################
+#     # Triggered by push #
+#     #####################
 fi
