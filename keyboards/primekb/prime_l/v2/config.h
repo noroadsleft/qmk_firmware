@@ -20,8 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define DEVICE_VER      0x0001
-#define PRODUCT         Prime_L_V2
+#define DEVICE_VER      0x0002
+#define PRODUCT         Prime_L V2
 
 /* Keyboard Matrix Assignments */
 #define MATRIX_ROW_PINS { E6, B2, B1, B0, B6 }
