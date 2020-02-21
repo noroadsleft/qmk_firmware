@@ -1,0 +1,14 @@
+{
+    "keyboard_name": "Hovdis One-Key",
+    "url": "",
+    "maintainer": "Hovdis",
+    "width": 1,
+    "height": 1,
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label":"K00", "x":0, "y":0}
+            ]
+        }
+    }
+}
