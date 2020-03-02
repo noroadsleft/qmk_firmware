@@ -285,6 +285,9 @@ bool process_record_quantum(keyrecord_t *record) {
                 }
 #endif
                 return false;
+            case VERSION:
+                SEND_STRING( QMK_KEYBOARD ":" QMK_KEYMAP " @ " QMK_VERSION );
+                return false;
             case EEPROM_RESET:
                 eeconfig_init();
                 return false;

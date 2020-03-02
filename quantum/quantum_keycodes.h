@@ -512,6 +512,9 @@ enum quantum_keycodes {
     DYN_MACRO_PLAY1,
     DYN_MACRO_PLAY2,
 
+    // QMK Version
+    VERSION,
+
     // always leave at the end
     SAFE_RANGE
 };
