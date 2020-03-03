@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // http://docs.gboards.ca
 uint32_t processQwerty(bool lookup) {
     // SECRET AGENT CHORDS
-    P( LSU | LK | RS | RD,    	SEND_STRING(VERSION); SEND_STRING(__DATE__));
+    P( LSU | LK | RS | RD,    	SEND_STRING(GBOARDS_VERSION); SEND_STRING(__DATE__));
 		P( LR  | ST2| RR | RB, 		SEND(KC_BSPC));
     P( LSD | RZ,   			 	SEND(KC_SPC));
 

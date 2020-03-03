@@ -53,7 +53,7 @@ uint32_t stenoLayers[] = {NUM, SYM, MOVE, MEDIA, FUNCT};
 // http://docs.gboards.ca
 uint32_t processQwerty(bool lookup) {
 	// Special keys
-	P( RT  | RS  | RD  | RZ | LNO,		SEND_STRING(VERSION); SEND_STRING(__DATE__));
+	P( RT  | RS  | RD  | RZ | LNO,		SEND_STRING(GBOARDS_VERSION); SEND_STRING(__DATE__));
 	P( LFT | LK  | LP  | LW,			REPEAT());
 
 	// Mouse Keys

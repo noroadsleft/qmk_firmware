@@ -39,7 +39,7 @@
 // http://docs.gboards.ca
 uint32_t processQwerty(bool lookup) {
 	// Specials
-	P( RT  | RS  | RD  | RZ | LNO,		SEND_STRING(VERSION); SEND_STRING(__DATE__));
+	P( RT  | RS  | RD  | RZ | LNO,		SEND_STRING(GBOARDS_VERSION); SEND_STRING(__DATE__));
 	P( LNO | LA  | LO  | RE | RU,		SEND(KC_MPLY));
 	P( ST1 | ST2 | ST3 | ST4,			SEND(KC_BSPC));
 

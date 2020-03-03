@@ -47,7 +47,7 @@
 // http://docs.gboards.ca
 uint32_t processQwerty(bool lookup) {
     // Specials
-    P( RT  | RS  | RD  | RZ | LNO,        SEND_STRING(VERSION); SEND_STRING(__DATE__));
+    P( RT  | RS  | RD  | RZ | LNO,        SEND_STRING(GBOARDS_VERSION); SEND_STRING(__DATE__));
     P( LNO | RNO | LA  | LO | RE | RU,    SEND(KC_MPLY));
     P( LFT | LK  | LP  | LW,              REPEAT());
     P( ST1 | ST2 | LW  | ST4,             SEND(KC_BSPC));
