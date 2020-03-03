@@ -631,7 +631,7 @@ else
     CHIBIOS_CONTRIB_VERSION := NA
 endif
 ifndef SKIP_VERSION
-BUILD_DATE := $(shell date +"%Y-%m-%d %H:%M:%S %z")
+BUILD_DATE := $(shell date -u +"%Y-%m-%d %H:%M:%S UTC")
 $(shell echo '#define QMK_VERSION "$(GIT_VERSION)"' > $(ROOT_DIR)/quantum/version.h)
 $(shell echo '#define QMK_BUILDDATE "$(BUILD_DATE)"' >> $(ROOT_DIR)/quantum/version.h)
 $(shell echo '#define CHIBIOS_VERSION "$(CHIBIOS_VERSION)"' >> $(ROOT_DIR)/quantum/version.h)
