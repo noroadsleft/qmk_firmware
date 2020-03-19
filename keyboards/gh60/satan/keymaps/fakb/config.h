@@ -1,15 +1,4 @@
-#ifndef CONFIG_H
-#define CONFIG_H
-
-#include "config_common.h"
-
-/* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
-#define DEVICE_VER      0x0003
-#define MANUFACTURER    SATAN
-#define PRODUCT         GH60
-#define DESCRIPTION     QMK keyboard firmware for Satan GH60 with WS2812 support
+#pragma once
 
 /* key matrix size */
 #define MATRIX_ROWS 5
@@ -39,6 +28,7 @@
 
 /* Backlight configuration
  */
+#undef BACKLIGHT_LEVELS
 #define BACKLIGHT_LEVELS 8
 
 /* Underlight configuration
@@ -69,10 +59,6 @@
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUNCTION
 
-#endif
-
-#ifndef CONFIG_USER_H
-#define CONFIG_USER_H
 
 #define MOUSEKEY_DELAY             0
 #define MOUSEKEY_INTERVAL          1
@@ -84,5 +70,3 @@
 // only change
 #undef RGB_DI_PIN
 #define RGB_DI_PIN B2
-
-#endif
