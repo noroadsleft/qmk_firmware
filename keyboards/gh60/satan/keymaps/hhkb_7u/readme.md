@@ -1,9 +1,11 @@
-# Dbroqua HHKB like Layout
+# HHKB Layout
 
 Like the HHKB but with a Satan GH60 PCB :D.
 
-# Programming Instructions:
+## Programming Instructions:
+
 Enter into programming mode and run the following command.
+
 ```
-$ sudo KEYMAP=dbroqua_hhkb make dfu
+make gh60/satan:hhkb_7u:flash
 ```
