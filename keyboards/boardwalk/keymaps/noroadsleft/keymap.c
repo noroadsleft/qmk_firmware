@@ -125,47 +125,47 @@ bool process_record_user(uint16_t keycode, keyrecord_t * record) {
             return false;
         case SEL_ALL:
             if ( record -> event.pressed ) {
-                if (biton32(layer_state) == _MAC) {
-                    SEND_STRING(SS_LGUI("a"));
-                } else {
+                // if (biton32(layer_state) == _MAC) {
+                //     SEND_STRING(SS_LGUI("a"));
+                // } else {
                     SEND_STRING(SS_LCTRL("a"));
-                }
+                // }
             }
             return false;
         case UNDO:
             if ( record -> event.pressed ) {
-                if (biton32(layer_state) == _MAC) {
-                    SEND_STRING(SS_LGUI("z"));
-                } else {
+                // if (biton32(layer_state) == _MAC) {
+                //     SEND_STRING(SS_LGUI("z"));
+                // } else {
                     SEND_STRING(SS_LCTRL("z"));
-                }
+                // }
             }
             return false;
         case CUT:
             if ( record -> event.pressed ) {
-                if (biton32(layer_state) == _MAC) {
-                    SEND_STRING(SS_LGUI("x"));
-                } else {
+                // if (biton32(layer_state) == _MAC) {
+                //     SEND_STRING(SS_LGUI("x"));
+                // } else {
                     SEND_STRING(SS_LCTRL("x"));
-                }
+                // }
             }
             return false;
         case COPY:
             if ( record -> event.pressed ) {
-                if (biton32(layer_state) == _MAC) {
-                    SEND_STRING(SS_LGUI("c"));
-                } else {
+                // if (biton32(layer_state) == _MAC) {
+                //     SEND_STRING(SS_LGUI("c"));
+                // } else {
                     SEND_STRING(SS_LCTRL("c"));
-                }
+                // }
             }
             return false;
         case PASTE:
             if ( record -> event.pressed ) {
-                if (biton32(layer_state) == _MAC) {
-                    SEND_STRING(SS_LGUI("v"));
-                } else {
+                // if (biton32(layer_state) == _MAC) {
+                //     SEND_STRING(SS_LGUI("v"));
+                // } else {
                     SEND_STRING(SS_LCTRL("v"));
-                }
+                // }
             }
             return false;
         case VRSN:
