@@ -13,3 +13,5 @@ RGBLIGHT_ENABLE = yes       # Enable WS2812 RGB underlight.  Do not enable this 
 SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend
 
 EXTRAFLAGS += -flto
+VIA_ENABLE = yes            # VIA Configurator support
+LTO_ENABLE = yes            # Link-Time Optimization
