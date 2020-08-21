@@ -5,7 +5,7 @@
     "width": 3,
     "height": 2,
     "layouts": {
-        "LAYOUT": {
+        "LAYOUT_numpad_6x4": {
             "layout": [
                 {"x":0, "y":0}, 
                 {"x":1, "y":0}, 
