@@ -7,7 +7,7 @@
 #define PRODUCT_ID      0x1707
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Santy
-#define PRODUCT         NoStab63
+#define PRODUCT         4bar60
 
 /* key matrix size */
 #define MATRIX_ROWS 5
