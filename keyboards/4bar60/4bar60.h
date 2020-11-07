@@ -21,16 +21,16 @@
 #define ___ KC_NO
 
 #define LAYOUT( \
-    K00, K01, K02, K03, K04, K05,    K06, K07, K08,    K09, K0A, K0B, K0C, K0D, K0E, \
-    K10, K11, K12, K13, K14, K15,    K16, K17, K18,    K19, K1A, K1B, K1C, K1D, K1E, K1F, K1G, \
-    K20, K21, K22, K23, K24, K25,    K26, K27, K28,    K29, K2A, K2B, K2C, K2D, K2E, \
-    K30,      K31, K32, K33,         K34, K35, K36,    K37, K38, K39,      K3A, K3B, \
-                                     K40, K41, K42                                   \
+    K00, K01, K02, K03, K04, K05,    K07, K08, K09,    K0B, K0C, K0D, K0E, K0F, K0H, \
+    K10, K11, K12, K13, K14, K15,    K17, K18, K19,    K1A, K1B, K1C, K1D, K1E, K1F, K1G, K1H, \
+    K21, K22, K23, K24, K25, K26,    K27, K28, K29,    K2B, K2C, K2D, K2E, K2F, K2G, \
+    K31,      K32, K33, K35,         K37, K38, K39,    K3B, K3C, K3E,      K3F, K3G, \
+                                     K47, K48, K49                                   \
 ) \
 { \
-    { K00,   K01,   K02,   K03,   K04,   K05,   KC_NO, K06, K07, K08, KC_NO, K09,   K0A,   K0B,   K0C,   K0D,   KC_NO, K0E   }, \
-    { K10,   K11,   K12,   K13,   K14,   K15,   KC_NO, K16, K17, K18, K19,   K1A,   K1B,   K1C,   K1D,   K1E,   K1F,   K1G   }, \
-    { KC_NO, K20,   K21,   K22,   K23,   K24,   K25,   K26, K27, K28, KC_NO, K29,   K2A,   K2B,   K2C,   K2D,   K2E,   KC_NO }, \
-    { KC_NO, K30,   K31,   K32,   KC_NO, K33,   KC_NO, K34, K35, K36, KC_NO, K37,   K38,   KC_NO, K39,   K3A,   K3B,   KC_NO }, \
-    { KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, K40, K41, K42, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO }  \
+    { K00, K01, K02, K03, K04, K05, ___, K07, K08, K09, ___, K0B, K0C, K0D, K0E, K0F, ___, K0H }, \
+    { K10, K11, K12, K13, K14, K15, ___, K17, K18, K19, K1A, K1B, K1C, K1D, K1E, K1F, K1G, K1H }, \
+    { ___, K21, K22, K23, K24, K25, K26, K27, K28, K29, ___, K2B, K2C, K2D, K2E, K2F, K2G, ___ }, \
+    { ___, K31, K32, K33, ___, K35, ___, K37, K38, K39, ___, K3B, K3C, ___, K3E, K3F, K3G, ___ }, \
+    { ___, ___, ___, ___, ___, ___, ___, K47, K48, K49, ___, ___, ___, ___, ___, ___, ___, ___ }  \
 }
