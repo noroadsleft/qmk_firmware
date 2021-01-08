@@ -32,6 +32,6 @@ FAUXCLICKY_ENABLE = no      # Use buzzer to emulate clicky switches
 
 SPLIT_KEYBOARD = yes
 
-LAYOUTS = ortho_4x14
+#LAYOUTS = ortho_4x14  # Disabled because layouts directory does not have an ortho_4x14 layout set up.
 
 DEFAULT_FOLDER = ergo42/rev1
