@@ -41,31 +41,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     }
 
 
-inline void num_led_on(void) {
-    setPinOutput(C5);
-    writePinLow(C5);
-}
-inline void num_led_off(void) {
-    setPinInput(C5);
-    writePinLow(C5);
-}
-
-inline void caps_led_on(void) {
-    setPinOutput(C6);
-    writePinLow(C6);
-}
-inline void caps_led_off(void) {
-    setPinInput(C6);
-    writePinLow(C6);
-}
-
-inline void scroll_led_on(void) {
-    setPinOutput(B7);
-    writePinLow(B7);
-}
-inline void scroll_led_off(void) {
-    setPinInput(B7);
-    writePinLow(B7);
+bool led_update_kb(led_t led_state) {
+    if(led_update_user(led_state)) {
+        writePin(C5, !led_state.num_lock);
+        writePin(C6, !led_state.caps_lock);
+        writePin(B7, !led_state.scroll_lock);
+    }
+    return true;
 }
 
 inline void fn_led_on(void) {
