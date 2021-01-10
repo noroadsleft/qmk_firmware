@@ -15,7 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "ghost_squid_20140518.h"
+#include "ghost_squid.h"
 
 __attribute__ ((weak))
 void matrix_init_user(void) {
