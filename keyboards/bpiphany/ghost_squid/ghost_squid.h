@@ -42,37 +42,37 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 inline void num_led_on(void) {
-    DDRC |=  (1<<5);
-    PORTC &= ~(1<<5);
+    setPinOutput(C5);
+    writePinLow(C5);
 }
 inline void num_led_off(void) {
-    DDRC &= ~(1<<5);
-    PORTC &= ~(1<<5);
+    setPinInput(C5);
+    writePinLow(C5);
 }
 
 inline void caps_led_on(void) {
-    DDRC |=  (1<<6);
-    PORTC &= ~(1<<6);
+    setPinOutput(C6);
+    writePinLow(C6);
 }
 inline void caps_led_off(void) {
-    DDRC &= ~(1<<6);
-    PORTC &= ~(1<<6);
+    setPinInput(C6);
+    writePinLow(C6);
 }
 
 inline void scroll_led_on(void) {
-    DDRB |=  (1<<7);
-    PORTB &= ~(1<<7);
+    setPinOutput(B7);
+    writePinLow(B7);
 }
 inline void scroll_led_off(void) {
-    DDRB &= ~(1<<7);
-    PORTB &= ~(1<<7);
+    setPinInput(B7);
+    writePinLow(B7);
 }
 
 inline void fn_led_on(void) {
-    DDRD |=  (1<<0);
-    PORTD &= ~(1<<0);
+    setPinOutput(D0);
+    writePinLow(D0);
 }
 inline void fn_led_off(void) {
-    DDRD &= ~(1<<0);
-    PORTD &= ~(1<<0);
+    setPinInput(D0);
+    writePinLow(D0);
 }
