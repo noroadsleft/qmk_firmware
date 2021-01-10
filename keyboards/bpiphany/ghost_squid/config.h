@@ -15,8 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef CONFIG_H
-#define CONFIG_H
+#pragma once
 
 #include "config_common.h"
 
@@ -26,7 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEVICE_VER      0x0104
 #define MANUFACTURER    Cooler Master
 #define PRODUCT         Quick Fire XT \\w The Ghost Squid
-#define DESCRIPTION     QMK firmware for Quick Fire XT
+#define DESCRIPTION     QMK Firmware for Quick Fire XT
 
 /* key matrix size */
 #define MATRIX_ROWS 8
@@ -36,11 +35,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION COL2ROW
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCING_DELAY 5
-
-/* key combination for magic key command */
-#define IS_COMMAND() ( \
-	keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) \
-)
-
-#endif
+#define DEBOUNCE 5
