@@ -63,7 +63,3 @@
     { K60, K61, K62, K63, K64, ___, ___, ___, K68, K69, ___, K6B, K6C, K6D }, \
     { K70, K71, K72, K73, K74, ___, ___, ___, K78, K79, K7A, K7B, K7C, K7D }  \
 }
-
-#define NUMLOCK_LED_PIN D0
-#define CAPSLOCK_LED_PIN D1
-#define SCROLLLOCK_LED_PIN D6
