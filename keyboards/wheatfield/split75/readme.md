@@ -1,6 +1,6 @@
 # split75
 
-![split75](https://i1.wp.com/mechboards.co.uk/wp-content/uploads/2019/10/HTB1qf0aSOLaK1RjSZFxq6ymPFXae.jpg)
+![split75](https://raw.githubusercontent.com/noroadsleft/qmk_images/master/keyboards/wheatfield/split75/HTB1iNgPSwHqK1RjSZFgq6y7JXXaG_640cr.jpg)
 
 This is a port of the QMK firmware for the split75 keyboard, also known as the ve.a taobao split clone. It runs on
 ps2avrGB firmware, like the [ps2avrGB keyboard](https://www.keyclack.com/product/gb-ps2avrgb/) or the ones sold
@@ -8,8 +8,9 @@ by [Winkeyless](http://winkeyless.kr/product/ps2avrgb-parts/).
 
 Original work performed by Michael L. Walker, all credit goes to him. I've tidied up the keymap (removed 3 extra keys), a couple of functions, info.json and this Readme.
 
-* Keyboard Maintainer: [Michael L. Walker](https://github.com/walkerstop)
-* Hardware Availability: https://a.aliexpress.com/_BT9raf https://item.taobao.com/item.htm?id=556970472669&toSite=main
+* Keyboard Maintainer: [The QMK Community](https://github.com/qmk), [Michael L. Walker](https://github.com/walkerstop)
+* Hardware Supported: Split75 PCB (ATmega32A)
+* Hardware Availability: [Shenzhen YMD Tech on AliExpress](https://www.aliexpress.com/i/33006060286.html), [TaoBao](https://item.taobao.com/item.htm?id=556970472669&toSite=main)
 
 Make example for this keyboard (after setting up your build environment):
 
@@ -21,7 +22,7 @@ Flashing example for this keyboard ([after setting up the bootloadHID flashing e
 
 or
 
-    bootloadHID -r split75_default.hex
+    bootloadHID -r wheatfield_split75_default.hex
 
 **Reset Key**: Hold down the key located at 3rd left position in the bottom row, commonly programmed as Left Control while plugging in the keyboard.
 

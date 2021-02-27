@@ -1,7 +1,7 @@
 {
     "keyboard_name": "split75",
     "url": "",
-    "maintainer": "Michael L. Walker",
+    "maintainer": "qmk",
     "width": 19.25,
     "height": 6,
     "layouts": {
