@@ -1,7 +1,7 @@
 # Build Options
 #   change yes to no to disable
 #
-AUDIO_ENABLE        = yes  # Audio output
+AUDIO_ENABLE = yes          # Audio output
 BACKLIGHT_ENABLE    = no   # Enable keyboard backlight functionality
 BOOTMAGIC_ENABLE = no       # Enable Bootmagic Lite
 COMMAND_ENABLE      = no   # Commands for debug and configuration
