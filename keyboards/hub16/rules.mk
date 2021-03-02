@@ -15,7 +15,7 @@ BOOTLOADER = caterina
 #   change yes to no to disable
 #
 CUSTOM_MATRIX = yes			# Custom scanning of matrix
-BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
+BOOTMAGIC_ENABLE = no
 MOUSEKEY_ENABLE = no        # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = yes        # Console for debug
