@@ -14,7 +14,7 @@ BOOTLOADER = bootloadHID
 # Build Options
 #   change yes to no to disable
 #
-BOOTMAGIC_ENABLE = yes
+BOOTMAGIC_ENABLE = full
 MOUSEKEY_ENABLE = no        # Mouse keys
 EXTRAKEY_ENABLE = no        # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug
