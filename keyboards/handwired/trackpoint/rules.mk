@@ -12,7 +12,7 @@ MCU = atmega32u4
 BOOTLOADER = halfkay
 
 
-BOOTMAGIC_ENABLE = no
+BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = yes       # Mouse keys(+4700)
 EXTRAKEY_ENABLE = yes       # Audio control and System control(+450)
 CONSOLE_ENABLE = yes        # Console for debug(+400)

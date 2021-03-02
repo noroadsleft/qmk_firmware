@@ -12,7 +12,7 @@ MCU = atmega32a
 BOOTLOADER = bootloadHID
 
 # build options
-BOOTMAGIC_ENABLE = lite
+BOOTMAGIC_ENABLE = lite     # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = no
 EXTRAKEY_ENABLE = yes
 CONSOLE_ENABLE = no

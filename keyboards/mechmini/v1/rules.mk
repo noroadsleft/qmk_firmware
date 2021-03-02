@@ -12,7 +12,7 @@ MCU = atmega32a
 BOOTLOADER = atmel-dfu
 
 # build options
-BOOTMAGIC_ENABLE = full
+BOOTMAGIC_ENABLE = full     # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = yes
 EXTRAKEY_ENABLE = yes
 CONSOLE_ENABLE = no

@@ -5,7 +5,7 @@ BOARD = QMK_PROTON_C
 # Build Options
 #   change yes to no to disable
 #
-BOOTMAGIC_ENABLE = no
+BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = no        # Mouse keys
 EXTRAKEY_ENABLE = no        # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug

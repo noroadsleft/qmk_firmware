@@ -7,7 +7,7 @@ BOARD = ST_NUCLEO32_F042K6
 #   comment out to disable the options.
 #
 BACKLIGHT_ENABLE = no
-BOOTMAGIC_ENABLE = no
+BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = no				# Mouse keys
 EXTRAKEY_ENABLE = no				# Audio control and System control
 CONSOLE_ENABLE = no					# Console for debug

@@ -9,7 +9,7 @@ WS2812_DRIVER = spi
 #   comment out to disable the options.
 #
 BACKLIGHT_ENABLE = yes
-BOOTMAGIC_ENABLE = no
+BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = yes   # Mouse keys(+4700)
 EXTRAKEY_ENABLE = yes   # Audio control and System control(+450)
 CONSOLE_ENABLE = no    # Console for debug(+400)
