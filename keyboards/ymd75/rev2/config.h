@@ -8,3 +8,5 @@
 #define BACKLIGHT_PIN D4
 #define DIODE_DIRECTION COL2ROW
 #define DEVICE_VER      0x0200
+
+#define LED_CAPS_LOCK_PIN D1
