@@ -24,31 +24,31 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ___ KC_NO
 
 #define LAYOUT( \
-    K05, K25, K35, K45, K55, K06, KA6, KA7, K07, KB5, KC5, KD5, KE5, KD1, KE1, KE2, \
-    K04, K14, K24, K34, K44, K54, K16, KB6, KB7, K17, KA4, KB4, KC4, KE4,      KD0, \
-    K03, K13, K23, K33, K43, K53, K26, KC6, KC7, K27, KA3, KB3, KC3, KD3,      K67, \
-    K02, K12, K22, K32, K42, K52, K36, KD6, KD7, K37, KA2, KB2, KD2,           KE0, \
-    K01, K11, K21, K31, K41, K51, K46, KE6, KE7, K47, KA1, KB1,           K86, K77, \
-    K00, K10, K20,           K56,                     K57, KB0, KC0, K96, K76, K66  \
-){ \
-    { K00, K10, K20, ___, ___, ___, ___, ___, ___, ___, ___, KB0, KC0, KD0, ___ }, \
-    { K01, K11, K21, K31, K41, K51, ___, ___, ___, ___, KA1, KB1, ___, KD1, KE1 }, \
-    { K02, K12, K22, K32, K42, K52, ___, ___, ___, ___, KA2, KB2, ___, KD2, KE2 }, \
-    { K03, K13, K23, K33, K43, K53, ___, ___, ___, ___, KA3, KB3, KC3, KD3, ___ }, \
-    { K04, K14, K24, K34, K44, K54, ___, ___, ___, ___, KA4, KB4, KC4, ___, KE4 }, \
-    { K05, ___, K25, K35, K45, K55, ___, ___, ___, ___, ___, KB5, KC5, KD5, KE5 }, \
-    { K06, K16, K26, K36, K46, K56, K66, K76, K86, K96, KA6, KB6, KC6, KD6, KE6 }, \
-    { K07, K17, K27, K37, K47, K57, K67, K77, KE0, ___, KA7, KB7, KC7, KD7, KE7 }  \
+    K50, K52, K53, K54, K55, K60, K6A, K7A, K70, K5B, K5C, K5D, K5E, K1D, K1E, K2E, \
+    K40, K41, K42, K43, K44, K45, K61, K6B, K7B, K71, K4A, K4B, K4C, K4E,      K0D, \
+    K30, K31, K32, K33, K34, K35, K62, K6C, K7C, K72, K3A, K3B, K3C, K3D,      K76, \
+    K20, K21, K22, K23, K24, K25, K63, K6D, K7D, K73, K2A, K2B,      K2D,      K78, \
+    K10,      K11, K12, K13, K14, K15, K64, K6E, K7E, K74, K1A,      K1B, K68, K77, \
+    K00, K01, K02,                K65,                K75, K0B, K0C, K69, K67, K66  \
+) { \
+    { K00, K01, K02, ___, ___, ___, ___, ___, ___, ___, ___, K0B, K0C, K0D, ___ }, \
+    { K10, K11, K12, K13, K14, K15, ___, ___, ___, ___, K1A, K1B, ___, K1D, K1E }, \
+    { K20, K21, K22, K23, K24, K25, ___, ___, ___, ___, K2A, K2B, ___, K2D, K2E }, \
+    { K30, K31, K32, K33, K34, K35, ___, ___, ___, ___, K3A, K3B, K3C, K3D, ___ }, \
+    { K40, K41, K42, K43, K44, K45, ___, ___, ___, ___, K4A, K4B, K4C, ___, K4E }, \
+    { K50, ___, K52, K53, K54, K55, ___, ___, ___, ___, ___, K5B, K5C, K5D, K5E }, \
+    { K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K6A, K6B, K6C, K6D, K6E }, \
+    { K70, K71, K72, K73, K74, K75, K76, K77, K78, ___, K7A, K7B, K7C, K7D, K7E }  \
 }
 
 #define LAYOUT_75_iso( \
     K50, K52, K53, K54, K55, K60, K6A, K7A, K70, K5B, K5C, K5D, K5E, K1D, K1E, K2E, \
-    K40, K41, K42, K43, K44, K45, K61, K6B, K7B, K71, K4A, K4B, K4C,      K4E, K0D, \
+    K40, K41, K42, K43, K44, K45, K61, K6B, K7B, K71, K4A, K4B, K4C, K4E,      K0D, \
     K30, K31, K32, K33, K34, K35, K62, K6C, K7C, K72, K3A, K3B, K3C,           K76, \
-    K20, K21, K22, K23, K24, K25, K63, K6D, K7D, K73, K2A, K2B, K2C, K2D,      K0E, \
+    K20, K21, K22, K23, K24, K25, K63, K6D, K7D, K73, K2A, K2B, K2C, K2D,      K78, \
     K10, K03, K11, K12, K13, K14, K15, K64, K6E, K7E, K74, K1A, K1B,      K68, K77, \
     K00, K01, K02,                K65,                K75, K0B, K0C, K69, K67, K66  \
-){ \
+) { \
     { K00, K01, K02, K03, ___, ___, ___, ___, ___, ___, ___, K0B, K0C, K0D, ___ }, \
     { K10, K11, K12, K13, K14, K15, ___, ___, ___, ___, K1A, K1B, ___, K1D, K1E }, \
     { K20, K21, K22, K23, K24, K25, ___, ___, ___, ___, K2A, K2B, K2C, K2D, K2E }, \
@@ -56,17 +56,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     { K40, K41, K42, K43, K44, K45, ___, ___, ___, ___, K4A, K4B, K4C, ___, K4E }, \
     { K50, ___, K52, K53, K54, K55, ___, ___, ___, ___, ___, K5B, K5C, K5D, K5E }, \
     { K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K6A, K6B, K6C, K6D, K6E }, \
-    { K70, K71, K72, K73, K74, K75, K76, K77, K0E, ___, K7A, K7B, K7C, K7D, K7E }  \
+    { K70, K71, K72, K73, K74, K75, K76, K77, K78, ___, K7A, K7B, K7C, K7D, K7E }  \
 }
 
 #define LAYOUT_75_iso_rwkl( \
     K50, K52, K53, K54, K55, K60, K6A, K7A, K70, K5B, K5C, K5D, K5E, K1D, K1E, K2E, \
-    K40, K41, K42, K43, K44, K45, K61, K6B, K7B, K71, K4A, K4B, K4C,      K4E, K0D, \
+    K40, K41, K42, K43, K44, K45, K61, K6B, K7B, K71, K4A, K4B, K4C, K4E,      K0D, \
     K30, K31, K32, K33, K34, K35, K62, K6C, K7C, K72, K3A, K3B, K3C,           K76, \
-    K20, K21, K22, K23, K24, K25, K63, K6D, K7D, K73, K2A, K2B, K2C, K2D,      K0E, \
+    K20, K21, K22, K23, K24, K25, K63, K6D, K7D, K73, K2A, K2B, K2C, K2D,      K78, \
     K10, K03, K11, K12, K13, K14, K15, K64, K6E, K7E, K74, K1A, K1B,      K68, K77, \
     K00, K01, K02,                K65,                K75,   K0C,    K69, K67, K66  \
-){ \
+) { \
     { K00, K01, K02, K03, ___, ___, ___, ___, ___, ___, ___, ___, K0C, K0D, ___ }, \
     { K10, K11, K12, K13, K14, K15, ___, ___, ___, ___, K1A, K1B, ___, K1D, K1E }, \
     { K20, K21, K22, K23, K24, K25, ___, ___, ___, ___, K2A, K2B, K2C, K2D, K2E }, \
@@ -74,5 +74,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     { K40, K41, K42, K43, K44, K45, ___, ___, ___, ___, K4A, K4B, K4C, ___, K4E }, \
     { K50, ___, K52, K53, K54, K55, ___, ___, ___, ___, ___, K5B, K5C, K5D, K5E }, \
     { K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K6A, K6B, K6C, K6D, K6E }, \
-    { K70, K71, K72, K73, K74, K75, K76, K77, K0E, ___, K7A, K7B, K7C, K7D, K7E }  \
+    { K70, K71, K72, K73, K74, K75, K76, K77, K78, ___, K7A, K7B, K7C, K7D, K7E }  \
 }
