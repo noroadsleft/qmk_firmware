@@ -20,4 +20,5 @@ BACKLIGHT_ENABLE = yes      # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = yes       # Enable keyboard RGB underglow
 BLUETOOTH_ENABLE = no       # Enable Bluetooth
 AUDIO_ENABLE = no           # Audio output
+
 KEY_LOCK_ENABLE = yes       # Enable KC_LOCK support
