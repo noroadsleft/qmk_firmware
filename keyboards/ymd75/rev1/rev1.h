@@ -31,14 +31,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     K01, K11, K21, K31, K41, K51, K46, KE6, KE7, K47, KA1, KB1,           K86, K77, \
     K00, K10, K20,           K56,                     K57, KB0, KC0, K96, K76, K66  \
 ){ \
-    { K00, K10,   K20, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KB0, KC0,   KD0,   KC_NO }, \
-    { K01, K11,   K21, K31,   K41,   K51,   KC_NO, KC_NO, KC_NO, KC_NO, KA1,   KB1, KC_NO, KD1,   KE1   }, \
-    { K02, K12,   K22, K32,   K42,   K52,   KC_NO, KC_NO, KC_NO, KC_NO, KA2,   KB2, KC_NO, KD2,   KE2   }, \
-    { K03, K13,   K23, K33,   K43,   K53,   KC_NO, KC_NO, KC_NO, KC_NO, KA3,   KB3, KC3,   KD3,   KC_NO }, \
-    { K04, K14,   K24, K34,   K44,   K54,   KC_NO, KC_NO, KC_NO, KC_NO, KA4,   KB4, KC4,   KC_NO, KE4   }, \
-    { K05, KC_NO, K25, K35,   K45,   K55,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KB5, KC5,   KD5,   KE5   }, \
-    { K06, K16,   K26, K36,   K46,   K56,   K66,   K76,   K86,   K96,   KA6,   KB6, KC6,   KD6,   KE6   }, \
-    { K07, K17,   K27, K37,   K47,   K57,   K67,   K77,   KE0,   KC_NO, KA7,   KB7, KC7,   KD7,   KE7   } \
+    { K00, K10, K20, ___, ___, ___, ___, ___, ___, ___, ___, KB0, KC0, KD0, ___ }, \
+    { K01, K11, K21, K31, K41, K51, ___, ___, ___, ___, KA1, KB1, ___, KD1, KE1 }, \
+    { K02, K12, K22, K32, K42, K52, ___, ___, ___, ___, KA2, KB2, ___, KD2, KE2 }, \
+    { K03, K13, K23, K33, K43, K53, ___, ___, ___, ___, KA3, KB3, KC3, KD3, ___ }, \
+    { K04, K14, K24, K34, K44, K54, ___, ___, ___, ___, KA4, KB4, KC4, ___, KE4 }, \
+    { K05, ___, K25, K35, K45, K55, ___, ___, ___, ___, ___, KB5, KC5, KD5, KE5 }, \
+    { K06, K16, K26, K36, K46, K56, K66, K76, K86, K96, KA6, KB6, KC6, KD6, KE6 }, \
+    { K07, K17, K27, K37, K47, K57, K67, K77, KE0, ___, KA7, KB7, KC7, KD7, KE7 }  \
 }
 
 #define LAYOUT_75_iso( \
@@ -49,14 +49,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     K10, K03, K11, K12, K13, K14, K15, K64, K6E, K7E, K74, K1A, K1B,      K68, K77, \
     K00, K01, K02,                K65,                K75, K0B, K0C, K69, K67, K66  \
 ){ \
-    { K00, K01,   K02, K03, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, K0B, K0C,   K0D,   KC_NO }, \
-    { K10, K11,   K12, K13, K14,   K15,   KC_NO, KC_NO, KC_NO, KC_NO, K1A,   K1B, KC_NO, K1D,   K1E   }, \
-    { K20, K21,   K22, K23, K24,   K25,   KC_NO, KC_NO, KC_NO, KC_NO, K2A,   K2B, K2C,   K2D,   K2E   }, \
-    { K30, K31,   K32, K33, K34,   K35,   KC_NO, KC_NO, KC_NO, KC_NO, K3A,   K3B, K3C,   KC_NO, KC_NO }, \
-    { K40, K41,   K42, K43, K44,   K45,   KC_NO, KC_NO, KC_NO, KC_NO, K4A,   K4B, K4C,   KC_NO, K4E   }, \
-    { K50, KC_NO, K52, K53, K54,   K55,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, K5B, K5C,   K5D,   K5E   }, \
-    { K60, K61,   K62, K63, K64,   K65,   K66,   K67,   K68,   K69,   K6A,   K6B, K6C,   K6D,   K6E   }, \
-    { K70, K71,   K72, K73, K74,   K75,   K76,   K77,   K0E,   KC_NO, K7A,   K7B, K7C,   K7D,   K7E   } \
+    { K00, K01, K02, K03, ___, ___, ___, ___, ___, ___, ___, K0B, K0C, K0D, ___ }, \
+    { K10, K11, K12, K13, K14, K15, ___, ___, ___, ___, K1A, K1B, ___, K1D, K1E }, \
+    { K20, K21, K22, K23, K24, K25, ___, ___, ___, ___, K2A, K2B, K2C, K2D, K2E }, \
+    { K30, K31, K32, K33, K34, K35, ___, ___, ___, ___, K3A, K3B, K3C, ___, ___ }, \
+    { K40, K41, K42, K43, K44, K45, ___, ___, ___, ___, K4A, K4B, K4C, ___, K4E }, \
+    { K50, ___, K52, K53, K54, K55, ___, ___, ___, ___, ___, K5B, K5C, K5D, K5E }, \
+    { K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K6A, K6B, K6C, K6D, K6E }, \
+    { K70, K71, K72, K73, K74, K75, K76, K77, K0E, ___, K7A, K7B, K7C, K7D, K7E }  \
 }
 
 #define LAYOUT_75_iso_rwkl( \
@@ -67,12 +67,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     K10, K03, K11, K12, K13, K14, K15, K64, K6E, K7E, K74, K1A, K1B,      K68, K77, \
     K00, K01, K02,                K65,                K75,   K0C,    K69, K67, K66  \
 ){ \
-    { K00, K01,   K02, K03, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, K0C,   K0D,   KC_NO }, \
-    { K10, K11,   K12, K13, K14,   K15,   KC_NO, KC_NO, KC_NO, KC_NO, K1A,   K1B,   KC_NO, K1D,   K1E   }, \
-    { K20, K21,   K22, K23, K24,   K25,   KC_NO, KC_NO, KC_NO, KC_NO, K2A,   K2B,   K2C,   K2D,   K2E   }, \
-    { K30, K31,   K32, K33, K34,   K35,   KC_NO, KC_NO, KC_NO, KC_NO, K3A,   K3B,   K3C,   KC_NO, KC_NO }, \
-    { K40, K41,   K42, K43, K44,   K45,   KC_NO, KC_NO, KC_NO, KC_NO, K4A,   K4B,   K4C,   KC_NO, K4E   }, \
-    { K50, KC_NO, K52, K53, K54,   K55,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, K5B,   K5C,   K5D,   K5E   }, \
-    { K60, K61,   K62, K63, K64,   K65,   K66,   K67,   K68,   K69,   K6A,   K6B,   K6C,   K6D,   K6E   }, \
-    { K70, K71,   K72, K73, K74,   K75,   K76,   K77,   K0E,   KC_NO, K7A,   K7B,   K7C,   K7D,   K7E   } \
+    { K00, K01, K02, K03, ___, ___, ___, ___, ___, ___, ___, ___, K0C, K0D, ___ }, \
+    { K10, K11, K12, K13, K14, K15, ___, ___, ___, ___, K1A, K1B, ___, K1D, K1E }, \
+    { K20, K21, K22, K23, K24, K25, ___, ___, ___, ___, K2A, K2B, K2C, K2D, K2E }, \
+    { K30, K31, K32, K33, K34, K35, ___, ___, ___, ___, K3A, K3B, K3C, ___, ___ }, \
+    { K40, K41, K42, K43, K44, K45, ___, ___, ___, ___, K4A, K4B, K4C, ___, K4E }, \
+    { K50, ___, K52, K53, K54, K55, ___, ___, ___, ___, ___, K5B, K5C, K5D, K5E }, \
+    { K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K6A, K6B, K6C, K6D, K6E }, \
+    { K70, K71, K72, K73, K74, K75, K76, K77, K0E, ___, K7A, K7B, K7C, K7D, K7E }  \
 }
