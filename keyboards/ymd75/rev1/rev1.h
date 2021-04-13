@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define ___ KC_NO
 
-#define LAYOUT( \
+#define LAYOUT_75_ansi( \
     K50, K52, K53, K54, K55, K60, K6A, K7A, K70, K5B, K5C, K5D, K5E, K1D, K1E, K2E, \
     K40, K41, K42, K43, K44, K45, K61, K6B, K7B, K71, K4A, K4B, K4C, K4E,      K0D, \
     K30, K31, K32, K33, K34, K35, K62, K6C, K7C, K72, K3A, K3B, K3C, K3D,      K76, \
@@ -76,3 +76,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     { K60, K61, K62, K63, K64, K65, K66, K67, K68, K69, K6A, K6B, K6C, K6D, K6E }, \
     { K70, K71, K72, K73, K74, K75, K76, K77, K78, ___, K7A, K7B, K7C, K7D, K7E }  \
 }
+
+#define LAYOUT LAYOUT_75_ansi
