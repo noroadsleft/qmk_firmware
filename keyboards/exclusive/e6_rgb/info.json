@@ -10,7 +10,6 @@
     },
     "layouts": {
         "LAYOUT_60_ansi_tsangan_split_rshift": {
-            "key_count": 61,
             "layout": [
                 {"label":"~", "x":0, "y":0},
                 {"label":"!", "x":1, "y":0},
@@ -80,7 +79,6 @@
             ]
         },
         "LAYOUT_60_ansi": {
-            "key_count": 61,
             "layout": [
                 {"label":"~", "x":0, "y":0},
                 {"label":"!", "x":1, "y":0},
@@ -150,7 +148,6 @@
             ]
         },
         "LAYOUT_60_hhkb": {
-            "key_count": 60,
             "layout": [
                 {"label":"Esc", "x":0, "y":0},
                 {"label":"!", "x":1, "y":0},
@@ -219,7 +216,6 @@
             ]
         },
         "LAYOUT_allleds": {
-            "key_count": 62,
             "layout": [
                 {"label":"Esc", "x":0, "y":0},
                 {"label":"!", "x":1, "y":0},
