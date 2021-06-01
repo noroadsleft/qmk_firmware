@@ -5,7 +5,7 @@
 CONSOLE_ENABLE = no
 TAP_DANCE_ENABLE = yes
 NKRO_ENABLE = yes
-BOOTMAGIC_ENABLE = full
+BOOTMAGIC_ENABLE = yes
 
 ifeq ($(strip $(KEYBOARD)), crkbd/rev1)
 RGB_MATRIX_ENABLE = yes

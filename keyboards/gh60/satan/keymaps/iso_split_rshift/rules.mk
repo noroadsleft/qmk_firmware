@@ -1,4 +1,4 @@
-BOOTMAGIC_ENABLE = full
+BOOTMAGIC_ENABLE = yes
 MOUSEKEY_ENABLE  = no  # Mouse keys
 EXTRAKEY_ENABLE  = yes # Audio control and System control
 CONSOLE_ENABLE   = yes # Console for debug
