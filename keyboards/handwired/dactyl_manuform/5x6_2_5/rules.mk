@@ -1,4 +1,4 @@
-BOOTMAGIC_ENABLE = lite
+BOOTMAGIC_ENABLE = lite     # Enable Bootmagic Lite
 COMMAND_ENABLE = no
 
 # # Pro-Micro

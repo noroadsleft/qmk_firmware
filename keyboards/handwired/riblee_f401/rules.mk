@@ -7,7 +7,7 @@ STM32_BOOTLOADER_ADDRESS = 0x1FFF0000
 # Build Options
 #   change yes to no to disable
 #
-BOOTMAGIC_ENABLE = yes
+BOOTMAGIC_ENABLE = yes      # Enable Bootmagic Lite
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 KEYBOARD_SHARED_EP = yes
