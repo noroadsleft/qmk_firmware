@@ -1,4 +1,4 @@
-BOOTMAGIC_ENABLE   = no
+BOOTMAGIC_ENABLE = no
 COMMAND_ENABLE     = no
 SLEEP_LED_ENABLE   = yes
 FORCE_NKRO        ?= yes
