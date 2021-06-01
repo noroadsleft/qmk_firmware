@@ -6,7 +6,7 @@ MCU = STM32F072
 #
 
 
-BOOTMAGIC_ENABLE = lite	# Virtual DIP switch configuration
+BOOTMAGIC_ENABLE = lite
 MOUSEKEY_ENABLE = yes	# Mouse keys
 EXTRAKEY_ENABLE = yes	# Audio control and System control
 CONSOLE_ENABLE = yes	# Console for debug
