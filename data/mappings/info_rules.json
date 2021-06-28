@@ -11,5 +11,5 @@
     "BOOTLOADER": {"info_key": "bootloader", "warn_duplicate": false},
     "LAYOUTS": {"info_key": "community_layouts", "value_type": "list"},
     "LED_MATRIX_DRIVER": {"info_key": "led_matrix.driver"},
-    "MCU": {"info_key": "processor", "warn_duplicate": false},
+    "MCU": {"info_key": "processor", "warn_duplicate": false}
 }

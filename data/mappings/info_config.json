@@ -7,7 +7,7 @@
     # to_json: Default `true`. Set to `false` to exclude this mapping from info.json
     # to_c: Default `true`. Set to `false` to exclude this mapping from config.h
     # warn_duplicate: Default `true`. Set to `false` to turn off warning when a value exists in both places
-    "DEBOUNCE": {"info_key": "debounce", "value_type": "int"}
+    "DEBOUNCE": {"info_key": "debounce", "value_type": "int"},
     "DEVICE_VER": {"info_key": "usb.device_ver", "value_type": "hex"},
     "DESCRIPTION": {"info_key": "keyboard_folder", "to_json": false},
     "DIODE_DIRECTION": {"info_key": "diode_direction"},
