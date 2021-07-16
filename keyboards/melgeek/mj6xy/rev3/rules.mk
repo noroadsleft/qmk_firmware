@@ -23,4 +23,4 @@ AUDIO_ENABLE = no            # Audio output
 BACKLIGHT_DRIVER = software
 
 LAYOUTS = 60_ansi
-                                                                                                                                                
+
