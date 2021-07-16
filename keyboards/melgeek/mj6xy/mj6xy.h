@@ -90,7 +90,7 @@
     { k40, k41, k42, k43, XXX, XXX, XXX, XXX, k48, XXX, k4a, k4b, k4c, k4d, k4e }  \
 }
 
-#define LAYOUT_60_ansi_7u_spc( \
+#define LAYOUT_60_ansi_tsangan( \
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k0a, k0b, k0c,      k0e, \
     k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k1a, k1b, k1c, k1d,      \
     k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, k2a, k2b,      k2d,      \
@@ -188,7 +188,7 @@
     { k40, k41, k42, XXX, XXX, k45, XXX, XXX, XXX, XXX, k4a, k4b, k4c, XXX, k4e }  \
 }
 
-#define LAYOUT_60_iso_7u_spc_split_rshift( \
+#define LAYOUT_60_iso_tsangan_split_rshift( \
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k0a, k0b, k0c,      k0e, \
     k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k1a, k1b, k1c,           \
     k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, k2a, k2b, k2c, k2d,      \
@@ -258,7 +258,7 @@
     { k40, k41, k42, k43, XXX, XXX, XXX, XXX, k48, XXX, k4a, k4b, k4c, k4d, k4e }  \
 }
 
-#define LAYOUT_60_iso_7u_spc( \
+#define LAYOUT_60_iso_tsangan( \
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k0a, k0b, k0c,      k0e, \
     k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k1a, k1b, k1c,           \
     k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, k2a, k2b, k2c, k2d,      \
@@ -342,7 +342,7 @@
     { k40, k41, k42, XXX, XXX, k45, XXX, XXX, XXX, XXX, k4a, k4b, k4c, XXX, k4e }  \
 }
 
-#define LAYOUT_60_iso_1u_lshift_7u_spc_split_rshift( \
+#define LAYOUT_60_iso_1u_lshift_tsangan_split_rshift( \
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k0a, k0b, k0c,      k0e, \
     k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k1a, k1b, k1c,           \
     k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, k2a, k2b, k2c, k2d,      \
@@ -426,7 +426,7 @@
     { k40, k41, k42, k43, XXX, XXX, XXX, XXX, k48, XXX, k4a, k4b, k4c, k4d, k4e }  \
 }
 
-#define LAYOUT_60_ansi_7u_spc_split_bs( \
+#define LAYOUT_60_ansi_tsangan_split_bs( \
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k0a, k0b, k0c, k0d, k0e, \
     k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k1a, k1b, k1c, k1d,      \
     k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, k2a, k2b,      k2d,      \
@@ -524,7 +524,7 @@
     { k40, k41, k42, XXX, XXX, k45, XXX, XXX, XXX, XXX, k4a, k4b, k4c, XXX, k4e }  \
 }
 
-#define LAYOUT_60_iso_7u_spc_split_bs_rshift( \
+#define LAYOUT_60_iso_tsangan_split_bs_rshift( \
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k0a, k0b, k0c, k0d, k0e, \
     k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k1a, k1b, k1c,           \
     k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, k2a, k2b, k2c, k2d,      \
@@ -594,7 +594,7 @@
     { k40, k41, k42, k43, XXX, XXX, XXX, XXX, k48, XXX, k4a, k4b, k4c, k4d, k4e }  \
 }
 
-#define LAYOUT_60_iso_7u_spc_split_bs( \
+#define LAYOUT_60_iso_tsangan_split_bs( \
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k0a, k0b, k0c, k0d, k0e, \
     k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k1a, k1b, k1c,           \
     k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, k2a, k2b, k2c, k2d,      \
@@ -678,7 +678,7 @@
     { k40, k41, k42, XXX, XXX, k45, XXX, XXX, XXX, XXX, k4a, k4b, k4c, XXX, k4e }  \
 }
 
-#define LAYOUT_60_iso_1u_lshift_7u_spc_split_bs_rshift( \
+#define LAYOUT_60_iso_1u_lshift_tsangan_split_bs_rshift( \
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k0a, k0b, k0c, k0d, k0e, \
     k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k1a, k1b, k1c,           \
     k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, k2a, k2b, k2c, k2d,      \

@@ -4,6 +4,16 @@
     "maintainer": "melgeek001365",
     "width": 15,
     "height": 5,
+    "layout_aliases": {
+        "LAYOUT_60_ansi_7u_spc": "LAYOUT_60_ansi_tsangan",
+        "LAYOUT_60_iso_7u_spc_split_rshift": "LAYOUT_60_iso_tsangan_split_rshift",
+        "LAYOUT_60_iso_7u_spc": "LAYOUT_60_iso_tsangan",
+        "LAYOUT_60_iso_1u_lshift_7u_spc_split_rshift": "LAYOUT_60_iso_1u_lshift_tsangan_split_rshift",
+        "LAYOUT_60_ansi_7u_spc_split_bs": "LAYOUT_60_ansi_tsangan_split_bs",
+        "LAYOUT_60_iso_7u_spc_split_bs_rshift": "LAYOUT_60_iso_tsangan_split_bs_rshift",
+        "LAYOUT_60_iso_7u_spc_split_bs": "LAYOUT_60_iso_tsangan_split_bs",
+        "LAYOUT_60_iso_1u_lshift_7u_spc_split_bs_rshift": "LAYOUT_60_iso_1u_lshift_tsangan_split_bs_rshift",
+    },
     "layouts": {
         "LAYOUT_60_ansi": {
             "layout": [
@@ -361,7 +371,7 @@
                 {"x": 14, "y": 4 }
             ]
         },
-        "LAYOUT_60_ansi_7u_spc": {
+        "LAYOUT_60_ansi_tsangan": {
             "layout": [
                 {"x": 0, "y": 0},
                 {"x": 1, "y": 0},
@@ -861,7 +871,7 @@
                 {"x": 13.75, "y": 4, "w": 1.25}
             ]
         },
-        "LAYOUT_60_iso_7u_spc_split_rshift": {
+        "LAYOUT_60_iso_tsangan_split_rshift": {
             "layout": [
                 {"x": 0, "y": 0},
                 {"x": 1, "y": 0},
@@ -1222,7 +1232,7 @@
                 {"x": 14, "y": 4 }
             ]
         },
-        "LAYOUT_60_iso_7u_spc": {
+        "LAYOUT_60_iso_tsangan": {
             "layout": [
                 {"x": 0, "y": 0},
                 {"x": 1, "y": 0},
@@ -1657,7 +1667,7 @@
                 {"x": 13.75, "y": 4, "w": 1.25}
             ]
         },
-        "LAYOUT_60_iso_1u_lshift_7u_spc_split_rshift": {
+        "LAYOUT_60_iso_1u_lshift_tsangan_split_rshift": {
             "layout": [
                 {"x": 0, "y": 0},
                 {"x": 1, "y": 0},
@@ -2088,7 +2098,7 @@
                 {"x": 14, "y": 4 }
             ]
         },
-        "LAYOUT_60_ansi_7u_spc_split_bs": {
+        "LAYOUT_60_ansi_tsangan_split_bs": {
             "layout": [
                 {"x": 0, "y": 0},
                 {"x": 1, "y": 0},
@@ -2595,7 +2605,7 @@
                 {"x": 13.75, "y": 4, "w": 1.25}
             ]
         },
-        "LAYOUT_60_iso_7u_spc_split_bs_rshift": {
+        "LAYOUT_60_iso_tsangan_split_bs_rshift": {
             "layout": [
                 {"x": 0, "y": 0},
                 {"x": 1, "y": 0},
@@ -2961,7 +2971,7 @@
                 {"x": 14, "y": 4 }
             ]
         },
-        "LAYOUT_60_iso_7u_spc_split_bs": {
+        "LAYOUT_60_iso_tsangan_split_bs": {
             "layout": [
                 {"x": 0, "y": 0},
                 {"x": 1, "y": 0},
@@ -3402,7 +3412,7 @@
                 {"x": 13.75, "y": 4, "w": 1.25}
             ]
         },
-        "LAYOUT_60_iso_1u_lshift_7u_spc_split_bs_rshift": {
+        "LAYOUT_60_iso_1u_lshift_tsangan_split_bs_rshift": {
             "layout": [
                 {"x": 0, "y": 0},
                 {"x": 1, "y": 0},
