@@ -60,10 +60,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 , {KEY_LALT,  KC_NO,   KC_NO,   KEY_1     }\
 , {KEY_F7,    KEY_F5,  KEY_F3,  KEY_F1    }\
 , {KEY_F8,    KEY_F6,  KEY_F4,  KEY_F2    }\
-, {KC_F10,    KC_NO,   KC_NO,   KC_NO     }\
-, {KC_F9,     KC_NO,   KC_NO,   KC_NO     }\
+, {KEY_F10,   KC_NO,   KC_NO,   KC_NO     }\
+, {KEY_F9,    KC_NO,   KC_NO,   KC_NO     }\
 , {KEY_LSFS,  KEY_LCTR,KEY_TAB, KEY_ESC   }\
 , {KC_NO,     KC_NO,   KC_NO,   KC_NO     }\
 }
 
-#define LAYOUT LAYOUT_5291
