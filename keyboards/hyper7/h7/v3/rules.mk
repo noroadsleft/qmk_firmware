@@ -23,5 +23,3 @@ SLEEP_LED_ENABLE = no    # Breathing sleep LED during USB suspend
 BACKLIGHT_ENABLE = no    # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no     # Enable keyboard RGB underglow
 AUDIO_ENABLE = no        # Audio output
-
-LAYOUTS = h7v3_183 h7v3_183_southpaw h7v3_213 h7v3_213_southpaw
