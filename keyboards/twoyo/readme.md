@@ -4,7 +4,7 @@
 
 A 12u split staggered 40% kit.
 
-* Keyboard Maintainer: Rain
+* Keyboard Maintainer: [rainkeebs](https://github.com/rainkeebs)
 * Hardware Supported: Yasui PCB v2
 * Hardware Availability: [rainkeebs](https://www.rainkeebs.mx/product/twoyo-keyboard-kit)
 
