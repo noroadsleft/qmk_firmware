@@ -1,3 +1,6 @@
+// Copyright 2017 Gabriel Young <gabeplaysdrums@live.com>
+// SPDX-License-Identifier: GPL-2.0-or-later
+
 #pragma once
 
 // place overrides here
