@@ -18,10 +18,8 @@ BACKLIGHT_DRIVER = pwm
 RGBLIGHT_ENABLE = yes       # Enable keyboard RGB underglow
 WS2812_DRIVER = pwm
 AUDIO_ENABLE = no           # Audio output
-LTO_ENABLE = no
 
 EEPROM_DRIVER = i2c
 
-ENCODER_ENABLE = no
 # Enter lower-power sleep mode when on the ChibiOS idle thread
 OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
