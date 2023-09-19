@@ -4,6 +4,10 @@
         "pid": "0x0051",
         "device_version": "0.0.1"
     },
+    "features": {
+        "backlight": true,
+        "rgblight": false
+    },
     "backlight": {
         "pin": "B7",
         "levels": 5

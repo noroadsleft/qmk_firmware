@@ -1,2 +1,1 @@
-BACKLIGHT_ENABLE = yes
-RGBLIGHT_ENABLE = no
+# This file intentionally left blank

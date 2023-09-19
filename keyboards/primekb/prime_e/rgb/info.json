@@ -4,6 +4,10 @@
         "pid": "0x0052",
         "device_version": "0.0.1"
     },
+    "features": {
+        "backlight": false,
+        "rgblight": true
+    },
     "rgblight": {
         "led_count": 8,
         "animations": {
