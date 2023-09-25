@@ -1,7 +1,7 @@
 {
     "keyboard_name": "KL-90 Soldered",
-    "manufacturer": "Kikos Lab",
-    "url": "www.kikoslab.com",
+    "manufacturer": "Kiko's Lab",
+    "url": "https://www.kikoslab.com/",
     "maintainer": "swiftrax",
     "usb": {
         "vid": "0x04D8",
