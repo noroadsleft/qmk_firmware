@@ -41,6 +41,20 @@
     "processor": "STM32F303",
     "bootloader": "stm32-dfu",
     "board": "QMK_PROTON_C",
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "console": true,
+        "command": true,
+        "nkro": true,
+        "backlight": false,
+        "rgblight": true,
+        "rgb_matrix": false,
+        "audio": true,
+        "encoder": true,
+        "dip_switch": true
+    },
     "community_layouts": ["ortho_5x12"],
     "layout_aliases": {
         "LAYOUT_preonic_grid": "LAYOUT_ortho_5x12"

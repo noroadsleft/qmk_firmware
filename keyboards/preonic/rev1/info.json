@@ -16,6 +16,21 @@
     },
     "processor": "atmega32u4",
     "bootloader": "atmel-dfu",
+    "features": {
+        "bootmagic": true,
+        "mousekey": false,
+        "extrakey": true,
+        "console": false,
+        "command": false,
+        "nkro": false,
+        "backlight": true,
+        "rgblight": false,
+        "audio": true,
+        "lto": true
+    },
+    "build": {
+        "lto": true
+    },
     "community_layouts": ["ortho_5x12"],
     "layout_aliases": {
         "LAYOUT_preonic_grid": "LAYOUT_ortho_5x12"
