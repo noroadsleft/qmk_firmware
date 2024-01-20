@@ -8,6 +8,5 @@ CONSOLE_ENABLE = no	# Console for debug
 COMMAND_ENABLE = yes    # Commands for debug and configuration
 NKRO_ENABLE = yes           # Enable N-Key Rollover
 BACKLIGHT_ENABLE = yes  # Enable keyboard backlight functionality
-AUDIO_ENABLE = no
 RGBLIGHT_ENABLE = yes
 SLEEP_LED_ENABLE = yes

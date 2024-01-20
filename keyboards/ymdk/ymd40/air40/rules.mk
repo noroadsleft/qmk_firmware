@@ -11,7 +11,6 @@ BACKLIGHT_ENABLE = no      # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no
 RGBLIGHT_SUPPORTED = no
 RGB_MATRIX_ENABLE = yes
-AUDIO_ENABLE = no           # Audio output
 AUDIO_SUPPORTED = no
 KEY_LOCK_ENABLE = no
 

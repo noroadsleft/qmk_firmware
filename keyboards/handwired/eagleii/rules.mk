@@ -8,5 +8,4 @@ CONSOLE_ENABLE = no
 COMMAND_ENABLE = no
 NKRO_ENABLE = no            # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no
-AUDIO_ENABLE = no
 RGBLIGHT_ENABLE = no

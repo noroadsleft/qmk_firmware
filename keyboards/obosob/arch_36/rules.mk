@@ -10,5 +10,4 @@ NKRO_ENABLE = no            # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = yes      # Enable keyboard RGB underglow
 OLED_ENABLE = yes
-AUDIO_ENABLE = no           # Audio output
 SPLIT_KEYBOARD = yes       # Split common

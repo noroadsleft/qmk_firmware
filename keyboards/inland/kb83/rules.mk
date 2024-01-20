@@ -10,7 +10,6 @@ KEYBOARD_SHARED_EP = no
 NKRO_ENABLE = yes           # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
-AUDIO_ENABLE = no           # Audio output
 DIP_SWITCH_ENABLE = yes		# DPI Switch
 ENCODER_ENABLE = yes
 RGB_MATRIX_ENABLE = yes

@@ -10,6 +10,5 @@ ENCODER_ENABLE = yes       # Enables the use of encoders
 NKRO_ENABLE = no            # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no      # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no       # Enable keyboard RGB underglow
-AUDIO_ENABLE = no          # Audio output
 LTO_ENABLE = yes           # Enables Link Time Optimization (LTO) which reduces the compiled size
 OLED_ENABLE = yes          # Enables the use of OLED displays

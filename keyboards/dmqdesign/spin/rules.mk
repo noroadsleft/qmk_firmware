@@ -10,5 +10,4 @@ NKRO_ENABLE = yes           # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = yes       # Enable keyboard RGB underglow
 MIDI_ENABLE = yes           # MIDI support
-AUDIO_ENABLE = no           # Audio output
 ENCODER_ENABLE = yes        # Enable rotary encoder support

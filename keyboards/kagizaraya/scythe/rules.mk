@@ -9,7 +9,6 @@ COMMAND_ENABLE = no         # Commands for debug and configuration
 NKRO_ENABLE = no            # Enable N-Key Rollover
 BACKLIGHT_ENABLE = yes      # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = yes        # Enable keyboard RGB underglow
-AUDIO_ENABLE = no           # Audio output
 
 SPLIT_KEYBOARD = yes        # Use shared split_common
 RGBLIGHT_SPLIT = yes
