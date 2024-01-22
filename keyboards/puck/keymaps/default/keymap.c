@@ -1,8 +1,10 @@
 #include QMK_KEYBOARD_H
 
-#define _BL 0
-#define _HL 1
-#define _LL 2
+enum layer_names {
+    _BL,
+    _HL,
+    _LL
+};
 
 enum keycodes {
   LOW,
