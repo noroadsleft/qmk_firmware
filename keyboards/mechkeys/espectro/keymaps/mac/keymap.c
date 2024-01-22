@@ -18,9 +18,11 @@
 #include QMK_KEYBOARD_H
 
 
-#define _QWERTY 0 //BASE layer
-#define _FUNCTION 1 //Function layer
-#define _WINDOWS 2 //Windows layer
+enum layer_names {
+    _QWERTY, //BASE layer
+    _FUNCTION, //Function layer
+    _WINDOWS  //Windows layer
+};
 
 enum custom_keycodes {
   PLACEHOLDER = SAFE_RANGE, // can always be here

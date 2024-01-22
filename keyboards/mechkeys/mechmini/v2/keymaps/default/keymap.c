@@ -1,8 +1,10 @@
 #include QMK_KEYBOARD_H
 
-#define _BL 0
-#define _FN1 1
-#define _FN2 2
+enum layer_names {
+    _BL,
+    _FN1,
+    _FN2
+};
 
 enum custom_keycodes {
 	SFT_ESC

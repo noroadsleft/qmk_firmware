@@ -1,7 +1,9 @@
 #include QMK_KEYBOARD_H
 
-#define _MAIN 0
-#define _FN 1
+enum layer_names {
+    _MAIN,
+    _FN
+};
 
 #define KC_CAPW LGUI(LSFT(KC_3))        // Capture whole screen
 #define KC_CPYW LGUI(LSFT(LCTL(KC_3)))  // Copy whole screen
