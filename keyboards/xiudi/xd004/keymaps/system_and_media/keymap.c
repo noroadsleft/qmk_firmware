@@ -1,8 +1,10 @@
 #include QMK_KEYBOARD_H
 
-#define _BASE 0    // Base layer
-#define _SYSTEM 1  // System actions
-#define _VOLUME 2  // Volume actions
+enum layer_names {
+    _BASE,    // Base layer
+    _SYSTEM,  // System actions
+    _VOLUME   // Volume actions
+};
 
 #define SUPER_ALT_F4_TIMER 300  // Timeout on the super alt-f4 key
 
