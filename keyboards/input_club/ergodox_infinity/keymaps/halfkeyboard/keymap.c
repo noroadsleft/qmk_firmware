@@ -3,17 +3,19 @@
 #ifndef MIDI_ENABLE
 #error "Midi is not enabled"
 #endif
-#define QWERTY 0 // qwerty layer
-#define HALFQWERTY 1 // mirrored qwerty layer
-#define DVORAK 2 // dvorak layer
-#define HALFDVORAK 3 // mirrored dvorak layer
-//no layer 4
-#define SYMB 5 // symbols
-#define HALFSYMB 6 // media keys
-#define PLVR 7 // steno plover layout
-#define SHORTCUTS 8 //layer with shortcut keys and other layer nav
-#define FUNCTION 9 //all F-keys, all day
-#define PROPERSTENO 10 //real steno layout
+enum layer_names {
+    QWERTY, // qwerty layer
+    HALFQWERTY, // mirrored qwerty layer
+    DVORAK, // dvorak layer
+    HALFDVORAK, // mirrored dvorak layer
+    //no layer 4
+    SYMB = 5, // symbols
+    HALFSYMB, // media keys
+    PLVR, // steno plover layout
+    SHORTCUTS, //layer with shortcut keys and other layer nav
+    FUNCTION, //all F-keys, all day
+    PROPERSTENO  //real steno layout
+};
 
 enum custom_keycodes {
   PLACEHOLDER = SAFE_RANGE, // can always be here

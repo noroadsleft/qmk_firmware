@@ -3,9 +3,11 @@
 #include "action_layer.h"
 #include "version.h"
 
-#define L0 0 // default layer
-#define L1 1
-#define L2 2
+enum layer_names {
+    L0, // default layer
+    L1,
+    L2
+};
 
 enum custom_keycodes {
   PLACEHOLDER = SAFE_RANGE, // can always be here
