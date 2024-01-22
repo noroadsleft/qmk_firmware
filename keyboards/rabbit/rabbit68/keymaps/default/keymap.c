@@ -19,8 +19,10 @@
 // enum custom_keycodes { QMKBEST = SAFE_RANGE, QMKURL };
 
 
-#define _BASE 0
-#define _FN 1
+enum layer_names {
+    _BASE,
+    _FN
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT(

@@ -27,10 +27,12 @@
 #define PASTE   LCTL(KC_V)         // PASTE
 
 
-#define BASE 0 // Default
-#define NUMB 1 // Numbers
-#define SYMB 2 // Symbols
-#define CURS 3 // Text Editing
+enum layer_names {
+    BASE, // Default
+    NUMB, // Numbers
+    SYMB, // Symbols
+    CURS  // Text Editing
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT( /* Base */
