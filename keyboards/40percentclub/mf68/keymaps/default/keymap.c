@@ -1,8 +1,10 @@
 #include QMK_KEYBOARD_H
 
-#define _QWERTY 0
-#define _FN1 1
-#define _FN2 2
+enum layer_names {
+    _QWERTY,
+    _FN1,
+    _FN2
+};
 
 #define FN2_GRV LT(_FN2, KC_GRV)
 
