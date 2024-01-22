@@ -1,7 +1,9 @@
 #include QMK_KEYBOARD_H
 
-#define _MAIN 0
-#define _FN 1
+enum layer_names {
+    _MAIN,
+    _FN
+};
 
 #define KC_X0 LT(_FN, KC_ESC)
 

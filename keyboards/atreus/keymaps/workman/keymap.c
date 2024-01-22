@@ -4,9 +4,11 @@
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
-#define _QW 0
-#define _RS 1
-#define _LW 2
+enum layer_names {
+    _QW,
+    _RS,
+    _LW
+};
 
 #define OSM_SFT OSM(MOD_LSFT)
 

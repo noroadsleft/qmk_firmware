@@ -4,12 +4,14 @@
 #define ___T___ KC_TRNS
 
 // Layer shorthand
-#define _QW 0
-#define _CM 1
-#define _DV 2
-#define _LW 3
-#define _RS 4
-#define _FN 5
+enum layer_names {
+    _QW,
+    _CM,
+    _DV,
+    _LW,
+    _RS,
+    _FN
+};
 
 /* ROW 1 OPTIONS
  * .--------------------------------------------------------------------------------------------------------------------------------------.
