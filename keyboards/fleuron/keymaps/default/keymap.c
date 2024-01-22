@@ -28,12 +28,6 @@ enum custom_keycodes {
   RAISE
 };
 
-/*
-#define _QWERTY 0
-#define _LOWER 1
-#define _RAISE 2
-*/
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = LAYOUT_ortho_6x16(
   /* Qwerty
