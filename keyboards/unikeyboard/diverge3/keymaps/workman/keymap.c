@@ -18,9 +18,11 @@
 // KEYMAP
 extern keymap_config_t keymap_config;
 
-#define _WORKMAN_P 0
-#define _GAME 1
-#define _RAISE 2
+enum layer_names {
+    _WORKMAN_P,
+    _GAME,
+    _RAISE
+};
 
 #define SHIFT_MOD   MOD_BIT(KC_LSFT)
 #define SPACE_RAISE LT(_RAISE, KC_SPC)

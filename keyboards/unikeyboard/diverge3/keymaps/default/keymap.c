@@ -85,8 +85,10 @@ tap_dance_action_t tap_dance_actions[] = {
 
 // KEYMAP
 
-#define _QWERTY 0
-#define _LOWER 1
+enum layer_names {
+    _QWERTY,
+    _LOWER
+};
 
 enum custom_keycodes {
   PAREN_MACRO = SAFE_RANGE,
