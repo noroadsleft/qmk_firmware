@@ -20,9 +20,11 @@
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
 
-#define _MA 0 //Main layer
-#define _LO 1 //Low
-#define _HI 2 //High
+enum layer_names {
+    _MA, //Main layer
+    _LO, //Low
+    _HI  //High
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_MA] = LAYOUT_ortho_4x12(

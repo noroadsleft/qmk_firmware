@@ -22,10 +22,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
 
-#define _MA 0 //Main layer
-#define _FN 1 //Fn
-#define _FN1 2 //Fn1
-#define _PN 3 //Pn
+enum layer_names {
+    _MA, //Main layer
+    _FN, //Fn
+    _FN1, //Fn1
+    _PN  //Pn
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_MA] = LAYOUT_split_space(

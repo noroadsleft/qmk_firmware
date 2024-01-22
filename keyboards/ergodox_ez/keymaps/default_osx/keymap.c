@@ -5,9 +5,11 @@
 #include "debug.h"
 #include "action_layer.h"
 
-#define BASE 0 // default layer
-#define SYMB 1 // symbols
-#define MDIA 2 // media keys
+enum layer_names {
+    BASE, // default layer
+    SYMB, // symbols
+    MDIA  // media keys
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
