@@ -19,8 +19,10 @@
 #define NUMB    (RR  | RB)	
 
 // QMK Layer Numbers
- #define BASE 0
- #define GAME 1
+enum layer_names {
+     BASE,
+     GAME
+};
 
 // Do not change QMK Layer 0! This is your main keyboard.
 // Make your QMK modifications to the later layers, to add 

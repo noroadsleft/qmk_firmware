@@ -228,10 +228,12 @@ uint32_t processQwerty(bool lookup) {
 	return 0;
 }
 
-#define STENO_LAYER		0
-#define GAMING			1
-#define GAMING_2		2
-#define MOVEMENT    3
+enum layer_names {
+    STENO_LAYER,
+    GAMING,
+    GAMING_2,
+    MOVEMENT
+};
 
 // "Layers"
 // Steno layer should be first in your map.

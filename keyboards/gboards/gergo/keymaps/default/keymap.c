@@ -8,9 +8,11 @@
 
 #include QMK_KEYBOARD_H
 
-#define BASE 0 // default layer
-#define SYMB 1 // symbols
-#define NUMB 2 // numbers/motion
+enum layer_names {
+    BASE, // default layer
+    SYMB, // symbols
+    NUMB  // numbers/motion
+};
 
 // Blank template at the bottom
 

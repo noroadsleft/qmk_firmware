@@ -25,9 +25,11 @@
 uint32_t stenoLayers[] = {NUM, SYM, MOVE, MEDIA, FUNCT};
 
 // QMK Layers
-#define STENO_LAYER   0
-#define GAMING		  1
-#define GAMING_2	  2
+enum layer_names {
+    STENO_LAYER,
+    GAMING,
+    GAMING_2
+};
 
 /* Keyboard Layout
  * ,---------------------------------.	  ,------------------------------.

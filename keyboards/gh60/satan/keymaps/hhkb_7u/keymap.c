@@ -1,8 +1,10 @@
 #include QMK_KEYBOARD_H
 #include "action_layer.h"
 
-#define _DEFAULT 0
-#define _FN 1
+enum layer_names {
+    _DEFAULT,
+    _FN
+};
 
 enum planck_keycodes {
   DEFAULT = SAFE_RANGE

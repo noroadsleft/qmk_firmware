@@ -7,10 +7,12 @@
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
-#define _DEF 0
-#define _SPC 1
-#define _TAB 2
-#define _SFX 3
+enum layer_names {
+    _DEF,
+    _SPC,
+    _TAB,
+    _SFX
+};
 
 // dual-role shortcuts
 #define TABDUAL   LT(_TAB, KC_TAB)

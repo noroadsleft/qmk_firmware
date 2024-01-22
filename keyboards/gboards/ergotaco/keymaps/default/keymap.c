@@ -8,8 +8,10 @@
 
 #include QMK_KEYBOARD_H
 
-#define FIESTA   0 // default layer
-#define TACOTIME 1 // symbols
+enum layer_names {
+    FIESTA,   // default layer
+    TACOTIME  // symbols
+};
 
 // Blank template at the bottom
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {

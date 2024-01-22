@@ -19,9 +19,11 @@
 #define MOVE    (ST1 | ST2)
 
 // QMK Layers
-#define STENO_LAYER   0
-#define GAMING        1
-#define GAMING_2      2
+enum layer_names {
+    STENO_LAYER,
+    GAMING,
+    GAMING_2
+};
 
 /* Keyboard Layout
  * ,---------------------------------.    ,------------------------------.
