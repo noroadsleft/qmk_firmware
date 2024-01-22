@@ -1,9 +1,11 @@
 #include QMK_KEYBOARD_H
 
-#define _BL 0
-#define _AL 1
-#define _FL 2
-#define _UL 3
+enum layer_names {
+    _BL,
+    _AL,
+    _FL,
+    _UL
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BL] = LAYOUT(
