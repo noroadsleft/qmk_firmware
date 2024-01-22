@@ -1,7 +1,9 @@
 #include QMK_KEYBOARD_H
 
-#define DEFAULT_LAYER 0
-#define LAYER_1       1
+enum layer_names {
+    DEFAULT_LAYER,
+    LAYER_1
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [DEFAULT_LAYER] = LAYOUT_hhkbanana(

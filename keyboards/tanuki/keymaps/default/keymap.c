@@ -11,11 +11,13 @@ typedef union {
 user_config_t user_config;
 
 // Layer definitions
-#define _BL 0
-#define _DL 1
-#define _UL 2
-#define _GL 3
-#define _BK 4
+enum layer_names {
+    _BL,
+    _DL,
+    _UL,
+    _GL,
+    _BK
+};
 
 // Custom keycode to toggle normal RGB or per-layer RGB
 enum custom_keycodes {

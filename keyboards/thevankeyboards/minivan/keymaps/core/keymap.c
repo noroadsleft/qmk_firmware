@@ -1,8 +1,10 @@
 #include QMK_KEYBOARD_H
 
-#define _QW 0
-#define _L1 1
-#define _L2 2
+enum layer_names {
+    _QW,
+    _L1,
+    _L2
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QW] = LAYOUT( /* Qwerty */

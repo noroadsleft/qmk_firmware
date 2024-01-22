@@ -1,7 +1,9 @@
 #include QMK_KEYBOARD_H
 
-#define BL 0
-#define FN 1
+enum layer_names {
+    BL,
+    FN
+};
 /*
  * Default HHKB Layout
  */

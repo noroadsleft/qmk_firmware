@@ -14,8 +14,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include QMK_KEYBOARD_H
 
-#define BL 0
-#define FN 1
+enum layer_names {
+    BL,
+    FN
+};
 /*
  * Default alix40 Layout
  */

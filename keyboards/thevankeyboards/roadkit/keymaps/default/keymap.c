@@ -6,7 +6,9 @@
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
 
-#define _NP 0
+enum layer_names {
+    _NP
+};
 
 enum custom_keycodes {
   NUMPAD = SAFE_RANGE
