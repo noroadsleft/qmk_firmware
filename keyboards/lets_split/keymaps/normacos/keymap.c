@@ -6,10 +6,12 @@ extern keymap_config_t keymap_config;
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
-#define _NORMAN 0
-#define _LOWER 1
-#define _RAISE 2
-#define _ADJUST 3
+enum layer_names {
+    _NORMAN,
+    _LOWER,
+    _RAISE,
+    _ADJUST
+};
 
 // To be used in process_record_user
 enum custom_keycodes {

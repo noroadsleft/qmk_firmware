@@ -16,7 +16,9 @@
 
 #include QMK_KEYBOARD_H
 
-#define _MAIN 0
+enum layer_names {
+    _MAIN
+};
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
   if (index == 0) {
