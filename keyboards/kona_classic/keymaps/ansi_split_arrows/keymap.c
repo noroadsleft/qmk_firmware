@@ -18,8 +18,10 @@
 #define MODS_SHIFT_GUI_MASK (MOD_BIT(KC_LSFT)|MOD_BIT(KC_RSFT)|MOD_BIT(KC_LGUI)|MOD_BIT(KC_RGUI))
 #define MODS_GUI_MASK   (MOD_BIT(KC_LGUI)|MOD_BIT(KC_RGUI))
 
-#define _DEFAULT 0
-#define _FN 1
+enum layer_names {
+    _DEFAULT,
+    _FN
+};
 
 enum custom_keycodes {
   SFT_ESC = SAFE_RANGE

@@ -16,8 +16,10 @@
 
 #include QMK_KEYBOARD_H
 
-#define _BASE 0
-#define _FN1 1
+enum layer_names {
+    _BASE,
+    _FN1
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 

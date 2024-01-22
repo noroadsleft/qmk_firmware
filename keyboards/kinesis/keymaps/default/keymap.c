@@ -3,7 +3,9 @@
  
 #include QMK_KEYBOARD_H
 
-#define QWERTY 0 // Base qwerty
+enum layer_names {
+    QWERTY  // Base qwerty
+};
 
 
 /****************************************************************************************************

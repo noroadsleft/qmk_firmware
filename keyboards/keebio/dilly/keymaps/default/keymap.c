@@ -1,12 +1,14 @@
 #include QMK_KEYBOARD_H
 
 
-#define _BASE 0
-#define _FN1 1
-#define _FN2 2
-#define _FN3 3
-#define _FN4 4
-#define _FN5 5
+enum layer_names {
+    _BASE,
+    _FN1,
+    _FN2,
+    _FN3,
+    _FN4,
+    _FN5
+};
 
 // Tap-Hold keys
 #define KC_ASFT MT(MOD_LSFT, KC_A)

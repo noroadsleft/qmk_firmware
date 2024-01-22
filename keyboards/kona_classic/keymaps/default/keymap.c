@@ -22,8 +22,10 @@ enum custom_keycodes {
   SFT_ESC = SAFE_RANGE
 };
 
-#define _DEFAULT 0
-#define _FN 1
+enum layer_names {
+    _DEFAULT,
+    _FN
+};
 
 //RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD
 

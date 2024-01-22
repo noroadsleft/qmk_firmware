@@ -41,8 +41,10 @@ void tk_reset(tap_dance_state_t *state, void *user_data);
 
 #define INDICATOR_LED   B5
 
-#define _FN0    1
-#define _ML1    2
+enum layer_names {
+    _FN0,
+    _ML1,
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(/* Base */

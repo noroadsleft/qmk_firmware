@@ -16,8 +16,10 @@
 
 #include QMK_KEYBOARD_H
 
-#define BASE 0
-#define FN 1
+enum layer_names {
+    BASE,
+    FN
+};
 #define RGB RGB_MOD
 #define XXX KC_NO
 #define KC_TR KC_TRANSPARENT

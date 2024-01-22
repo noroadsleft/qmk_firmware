@@ -1,7 +1,9 @@
 #include QMK_KEYBOARD_H
 
-#define _QWERTY 0
-#define _FN1 1
+enum layer_names {
+    _QWERTY,
+    _FN1
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT_68_ansi(

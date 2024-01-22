@@ -3,8 +3,10 @@
 
 #include QMK_KEYBOARD_H
 
-#define _DVORAK 0 // Base Dvorak layer
-#define _MEDIA 1  // Media layer
+enum layer_names {
+    _DVORAK, // Base Dvorak layer
+    _MEDIA   // Media layer
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_DVORAK] = LAYOUT(

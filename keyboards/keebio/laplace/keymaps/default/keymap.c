@@ -1,8 +1,10 @@
 #include QMK_KEYBOARD_H
 
-#define _BASE 0
-#define _FN1 1
-#define _FN2 2
+enum layer_names {
+    _BASE,
+    _FN1,
+    _FN2
+};
 
 #define FN1 MO(_FN1)
 #define FN2 MO(_FN2)
