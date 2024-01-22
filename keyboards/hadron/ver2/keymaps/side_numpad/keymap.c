@@ -7,13 +7,15 @@ extern rgblight_config_t rgblight_config;
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
-#define _QWERTY 0
-#define _LOWER 1
-#define _RAISE 2
-#define _FNLAYER 3
-#define _NUMLAY 4
-#define _MOUSECURSOR 5
-#define _ADJUST 6
+enum layer_names {
+    _QWERTY,
+    _LOWER,
+    _RAISE,
+    _FNLAYER,
+    _NUMLAY,
+    _MOUSECURSOR,
+    _ADJUST
+};
 
 enum preonic_keycodes {
   QWERTY = SAFE_RANGE,

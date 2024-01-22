@@ -1,8 +1,10 @@
 #include QMK_KEYBOARD_H
 
-#define HDN 1
-#define OSY 2
-#define MOS 3
+enum layer_names {
+    HDN,
+    OSY,
+    MOS
+};
 #define CTL_ESC CTL_T(KC_ESC)
 #define SFT_BSP SFT_T(KC_BSPC)
 

@@ -1,8 +1,10 @@
 #include QMK_KEYBOARD_H
 
 // Layer shorthand
-#define _QW 0
-#define _FN 1
+enum layer_names {
+    _QW,
+    _FN
+};
 
 enum custom_keycodes {
     M_EXAMPLE1 = SAFE_RANGE,

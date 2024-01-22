@@ -1,12 +1,10 @@
 #include QMK_KEYBOARD_H
 #include "version.h"
 
-#define BASE 0 // default layer
-enum
-{
-    _BL = 0,
+enum layer_names {
+    _BL,
     _SYMB,
-    _MDIA,
+    _MDIA
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {

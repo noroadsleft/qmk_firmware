@@ -4,10 +4,12 @@
 
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
-#define _BASE 0
-#define _SYMBOLS 1
-#define _MEDIA 2
-#define _TRNS 8
+enum layer_names {
+    _BASE,
+    _SYMBOLS,
+    _MEDIA,
+    _TRNS
+};
 
 #define PEDAL_DELAY 250
 #define KEY_DELAY 130

@@ -6,9 +6,11 @@
 
 /* Note: don't forget there's some more code in qmk_firmware/users/anderson dir */
 
-#define _MAIN 0
-#define _ALPHA 1
-#define _BETA 2
+enum layer_names {
+    _MAIN,
+    _ALPHA,
+    _BETA
+};
 
 enum custom_keycodes {
     KC_MAIN = SAFE_RANGE,

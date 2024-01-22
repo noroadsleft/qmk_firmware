@@ -16,7 +16,9 @@
 #include QMK_KEYBOARD_H
 
 // Layer names
-#define base  0
+enum layer_names {
+    base
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [base] = LAYOUT(

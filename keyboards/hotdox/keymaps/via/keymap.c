@@ -1,9 +1,11 @@
 #include QMK_KEYBOARD_H
 #include "version.h"
 
-#define BASE 0 // default layer
-#define SYMB 1 // symbols
-#define MDIA 2 // media keys
+enum layer_names {
+    BASE, // default layer
+    SYMB, // symbols
+    MDIA  // media keys
+};
 
 enum custom_keycodes {
   VRSN = SAFE_RANGE,

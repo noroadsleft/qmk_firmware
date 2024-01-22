@@ -1,8 +1,10 @@
 #include QMK_KEYBOARD_H
 
-#define _BASE 0
-#define _RAISE 1
-#define _LOWER 2
+enum layer_names {
+    _BASE,
+    _RAISE,
+    _LOWER
+};
 
 #define SFT_ESC  SFT_T(KC_ESC)
 #define CTL_BSPC CTL_T(KC_BSPC)

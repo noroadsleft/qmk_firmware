@@ -16,10 +16,12 @@
 #include QMK_KEYBOARD_H
 
 // Layer names
-#define base  0
-#define shrek 1
-#define ogre  2
-#define tcp   3
+enum layer_names {
+    base,
+    shrek,
+    ogre,
+    tcp
+};
 
 // Layer Switches
 #define KC_SHRK TT(shrek)

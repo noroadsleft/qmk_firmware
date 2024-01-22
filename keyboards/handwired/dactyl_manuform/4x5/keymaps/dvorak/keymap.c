@@ -2,9 +2,11 @@
 
 extern keymap_config_t keymap_config;
 
-#define _BASE 0
-#define _RAISE 1
-#define _LOWER 2
+enum layer_names {
+    _BASE,
+    _RAISE,
+    _LOWER
+};
 
 // Fillers to make layering more clear
 

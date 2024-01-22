@@ -3,8 +3,10 @@
  */
 #include QMK_KEYBOARD_H
 
-#define BASE 0
-#define HHKB 1
+enum layer_names {
+    BASE,
+    HHKB
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 

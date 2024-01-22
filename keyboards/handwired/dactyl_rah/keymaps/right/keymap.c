@@ -15,8 +15,10 @@
 
 #include QMK_KEYBOARD_H
 
-#define BASE 0
-#define NAV 1
+enum layer_names {
+    BASE,
+    NAV
+};
 
 #define CTL_ESC LCTL_T(KC_ESC)
 #define CTL_CAP LCTL_T(KC_CAPS)

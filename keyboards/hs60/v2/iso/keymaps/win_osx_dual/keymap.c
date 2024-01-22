@@ -17,11 +17,13 @@
 #include QMK_KEYBOARD_H
 
 
-#define _QWERTY 0
-#define _OSX 1
-#define _RAISE 2
-#define _SHIFTER 3
-#define _ADJUST 16
+enum layer_names {
+    _QWERTY,
+    _OSX,
+    _RAISE,
+    _SHIFTER,
+    _ADJUST
+};
 
 
 enum custom_keycodes {

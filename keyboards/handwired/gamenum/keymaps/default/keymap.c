@@ -1,9 +1,11 @@
 #include QMK_KEYBOARD_H
 
 
-#define DEF 0
-#define HDN 1
-#define OSY 2
+enum layer_names {
+    DEF,
+    HDN,
+    OSY
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [DEF] = LAYOUT(
