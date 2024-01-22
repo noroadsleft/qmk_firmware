@@ -18,10 +18,12 @@
 * and just use numbers.
 *
 */
-#define BL 0     // Base Layer
-#define FL 1     // Function Layer
-#define NL 2     // Numpad Layer
-#define RL 3     // RGB Layer
+enum layer_names {
+    BL,     // Base Layer
+    FL,     // Function Layer
+    NL,     // Numpad Layer
+    RL      // RGB Layer
+};
 
 /*
 * Let's give an easier name to the RGB modes
