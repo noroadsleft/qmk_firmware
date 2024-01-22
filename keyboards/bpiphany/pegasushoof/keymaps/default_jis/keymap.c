@@ -18,8 +18,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include QMK_KEYBOARD_H
 
-#define KM_JIS  0
-#define KM_MEDIA 1
+enum layer_names {
+    KM_JIS,
+    KM_MEDIA
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
   {

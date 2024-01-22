@@ -2,11 +2,13 @@
 
 extern keymap_config_t keymap_config;
 
-#define BASE 0
-#define META 1
-#define SYMB 2
-#define GAME 3
-#define RGB  4
+enum layer_names {
+    BASE,
+    META,
+    SYMB,
+    GAME,
+    RGB
+};
 
 #ifdef RGBLIGHT_ENABLE
 //Following line allows macro to read current RGB settings

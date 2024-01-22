@@ -2,11 +2,13 @@
 
 extern keymap_config_t keymap_config;
 
-#define BASE 0
-#define META 1
-#define SYMB 2
-#define GAME 3
-#define ILLUST 4
+enum layer_names {
+    BASE,
+    META,
+    SYMB,
+    GAME,
+    ILLUST
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 

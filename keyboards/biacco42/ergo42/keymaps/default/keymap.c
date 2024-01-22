@@ -1,10 +1,12 @@
 #include QMK_KEYBOARD_H
 
 
-#define BASE 0
-#define META 1
-#define SYMB 2
-#define GAME 3
+enum layer_names {
+    BASE,
+    META,
+    SYMB,
+    GAME
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 

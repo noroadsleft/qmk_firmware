@@ -15,8 +15,10 @@
  */
 #include QMK_KEYBOARD_H
 
-#define _BL 0
-#define _FN 1
+enum layer_names {
+    _BL,
+    _FN
+};
 
 // Define keyboard specific keycodes for controlling on/off for all LEDs as they
 // are all on different pins with this PCB, rather than a single backlight pin
