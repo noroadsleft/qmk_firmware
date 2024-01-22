@@ -18,9 +18,11 @@
 
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
-#define _BL 0
-#define _FL 1
-#define _CL 2
+enum layer_names {
+    _BL,
+    _FL,
+    _CL
+};
 
 enum custom_keycodes {
     S_BSKTC = SAFE_RANGE,
