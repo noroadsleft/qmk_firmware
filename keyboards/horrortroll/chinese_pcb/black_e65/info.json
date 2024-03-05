@@ -61,7 +61,8 @@
         "LAYOUT_65_iso_7u_wk": "LAYOUT_65_iso_blocker_tsangan",
         "LAYOUT_65_iso_7u_wk_splitbs": "LAYOUT_65_iso_blocker_tsangan_split_bs",
         "LAYOUT_65_all_7u_wkl": "LAYOUT_65_ansi_blocker_tsangan_wkl_split_bs_lshift",
-        "LAYOUT_65_ansi_7u_wkl": "LAYOUT_65_ansi_blocker_tsangan_wkl"
+        "LAYOUT_65_ansi_7u_wkl": "LAYOUT_65_ansi_blocker_tsangan_wkl",
+        "LAYOUT_65_ansi_7u_wkl_splitbs": "LAYOUT_65_ansi_blocker_tsangan_wkl_split_bs"
     },
     "layouts": {
         "LAYOUT_all": {
@@ -1804,7 +1805,7 @@
                 {"matrix": [4, 13], "x": 15, "y": 4}
             ]
         },
-        "LAYOUT_65_ansi_7u_wkl_splitbs": {
+        "LAYOUT_65_ansi_blocker_tsangan_wkl_split_bs": {
             "layout": [
                 {"matrix": [0, 0], "x": 0, "y": 0},
                 {"matrix": [0, 1], "x": 1, "y": 0},
