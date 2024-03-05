@@ -42,7 +42,8 @@
     "processor": "atmega32u4",
     "bootloader": "atmel-dfu",
     "layout_aliases": {
-        "LAYOUT_65_all_noblocker": "LAYOUT_65_ansi_rwkl_split_bs_lshift"
+        "LAYOUT_65_all_noblocker": "LAYOUT_65_ansi_rwkl_split_bs_lshift",
+        "LAYOUT_65_ansi_noblocker": "LAYOUT_65_ansi_rwkl"
     },
     "layouts": {
         "LAYOUT_all": {
@@ -200,7 +201,7 @@
                 {"matrix": [4, 13], "x": 15, "y": 4}
             ]
         },
-        "LAYOUT_65_ansi_noblocker": {
+        "LAYOUT_65_ansi_rwkl": {
             "layout": [
                 {"matrix": [0, 0], "x": 0, "y": 0},
                 {"matrix": [0, 1], "x": 1, "y": 0},
