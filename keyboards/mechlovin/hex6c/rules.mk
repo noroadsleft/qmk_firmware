@@ -7,5 +7,4 @@ EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = yes        # Console for debug
 COMMAND_ENABLE = yes        # Commands for debug and configuration
 NKRO_ENABLE = yes           # Enable N-Key Rollover
-AUDIO_ENABLE = no           # Audio output
 ENCODER_ENABLE = yes

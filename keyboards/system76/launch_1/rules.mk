@@ -18,7 +18,6 @@ BACKLIGHT_ENABLE = no       # RGB backlight (conflicts with RGB matrix)
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 RGB_MATRIX_ENABLE = yes     # RGB matrix
 RGB_MATRIX_CUSTOM_KB = yes  # Custom keyboard effects
-AUDIO_ENABLE = no           # Audio output
 LTO_ENABLE = yes            # Link-time optimization for smaller binary
 
 # Add System76 EC command interface as well as I2C and USB mux drivers

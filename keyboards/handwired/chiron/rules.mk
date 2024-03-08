@@ -1,7 +1,6 @@
 # Build Options
 #   change yes to no to disable
 #
-AUDIO_ENABLE = no
 AUTOLOG_ENABLE = no
 BACKLIGHT_ENABLE = no
 BOOTMAGIC_ENABLE = no       # Enable Bootmagic Lite

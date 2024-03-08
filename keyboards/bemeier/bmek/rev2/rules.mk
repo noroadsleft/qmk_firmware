@@ -11,5 +11,4 @@ SPLIT_KEYBOARD        = no
 BACKLIGHT_ENABLE      = no
 NKRO_ENABLE = yes           # Enable N-Key Rollover
 RGBLIGHT_ENABLE       = yes
-AUDIO_ENABLE          = no
 LTO_ENABLE            = yes

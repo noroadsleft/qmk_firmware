@@ -12,7 +12,6 @@ COMMAND_ENABLE = yes        # Commands for debug and configuration
 NKRO_ENABLE = yes           # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = yes       # Enable keyboard RGB underglow
-AUDIO_ENABLE = no           # Audio output
 VELOCIKEY_ENABLE = yes
 KEY_LOCK_ENABLE = yes
 

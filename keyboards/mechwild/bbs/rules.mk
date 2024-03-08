@@ -8,7 +8,6 @@ CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
-AUDIO_ENABLE = no           # Audio output
 DIP_SWITCH_ENABLE = yes     # Dip Switch Enabled
 
 # Necessary for stenography functionality

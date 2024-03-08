@@ -9,4 +9,3 @@ COMMAND_ENABLE = yes        # Commands for debug and configuration
 NKRO_ENABLE = yes           # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 UNICODE_ENABLE = yes         # Unicode
-AUDIO_ENABLE = no           # Audio output

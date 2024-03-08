@@ -19,7 +19,6 @@ COMMAND_ENABLE = no         # Commands for debug and configuration
 NKRO_ENABLE = no            # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = yes       # HAS TO BE ON! Otherwise the custom matrix doesn't work
-AUDIO_ENABLE = no           # Audio output
 LTO_ENABLE = yes
 
 CUSTOM_MATRIX = lite

@@ -12,7 +12,6 @@ COMMAND_ENABLE = yes        # Commands for debug and configuration
 NKRO_ENABLE = no            # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
-AUDIO_ENABLE = no           # Audio output
 UNICODE_ENABLE = yes
 CUSTOM_MATRIX = lite
 

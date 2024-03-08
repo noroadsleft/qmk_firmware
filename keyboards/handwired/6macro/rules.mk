@@ -11,4 +11,3 @@ RGB_MATRIX_ENABLE = no     # Enable per-key coordinate based RGB effects. Do not
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = yes       # Enable keyboard RGB underglow
 UNICODE_ENABLE = yes        # Unicode
-AUDIO_ENABLE = no           # Audio output
