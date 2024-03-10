@@ -7,7 +7,6 @@ NKRO_ENABLE      = yes # USB Nkey Rollover - if this doesn't work, see here: htt
 RGBLIGHT_ENABLE  = yes # Enable keyboard underlight functionality
 BACKLIGHT_ENABLE = no  # Enable keyboard backlight functionality
 MIDI_ENABLE      = no  # MIDI controls
-AUDIO_ENABLE     = no
 UNICODE_ENABLE   = no  # Unicode
 BLUETOOTH_ENABLE = no  # Enable Bluetooth with the Adafruit EZ-Key HID
 

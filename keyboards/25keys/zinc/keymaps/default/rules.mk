@@ -5,7 +5,6 @@ CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no        # Commands for debug and configuration
 NKRO_ENABLE = no
 BACKLIGHT_ENABLE = no      # Enable keyboard backlight functionality
-AUDIO_ENABLE = no           # Audio output
 RGBLIGHT_ENABLE = no        # Enable WS2812 RGB underlight.  Do not enable this with audio at the same time.
 SWAP_HANDS_ENABLE = no        # Enable one-hand typing
 LTO_ENABLE = no             # if firmware size over limit, try this option
