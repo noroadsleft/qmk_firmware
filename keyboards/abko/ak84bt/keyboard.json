@@ -1,6 +1,7 @@
 {
     "manufacturer": "abko",
     "keyboard_name": "ak84bt",
+    "maintainer": "temp4gh",
     "bootloader": "stm32duino",
     "bootmagic": {
         "matrix": [1, 0]
