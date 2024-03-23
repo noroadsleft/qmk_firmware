@@ -13,6 +13,23 @@
         "rows": ["D3", "D2", "D4", "C6"]
     },
     "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": false,
+        "mousekey": false,
+        "extrakey": true,
+        "console": true,
+        "command": true,
+        "rgblight": true,
+        "encoder": true,
+        "dip_switch": true,
+        "lto": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
     "dip_switch": {
         "pins": ["D0"]
     },
