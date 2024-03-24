@@ -8,12 +8,26 @@
         "pid": "0x0014",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "console": true,
+        "command": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
     "matrix_pins": {
         "cols": ["E6", "F6", "B1", "B0", "C7", "C6"],
         "rows": ["D7", "D6", "D4", "F0"]
     },
     "diode_direction": "COL2ROW",
     "split": {
+        "enabled": true,
         "soft_serial_pin": "D0",
         "matrix_pins": {
             "right": {
