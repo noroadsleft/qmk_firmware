@@ -1,18 +1,52 @@
 {
-    "keyboard_name": "Ext65 Rev1",
+    "keyboard_name": "Ext65 Rev2",
     "manufacturer": "AEBoards",
     "url": "",
     "maintainer": "qmk",
     "usb": {
-        "pid": "0xAE65",
+        "pid": "0xA652",
         "device_version": "0.0.1"
     },
-    "processor": "atmega32u4",
-    "bootloader": "atmel-dfu",
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "console": true,
+        "nkro": true,
+        "backlight": true,
+        "rgblight": true,
+        "sleep_led": true
+    },
+    "backlight": {
+        "pin": "B5",
+        "levels": 6,
+        "breathing": true
+    },
+    "rgblight": {
+        "led_count": 24,
+        "animations": {
+            "breathing": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true,
+            "snake": true,
+            "knight": true,
+            "christmas": true,
+            "static_gradient": true,
+            "rgb_test": true,
+            "alternating": true,
+            "twinkle": true
+        }
+    },
+    "ws2812": {
+        "pin": "B15",
+        "driver": "spi"
+    },
+    "processor": "STM32F072",
+    "bootloader": "stm32-dfu",
     "diode_direction": "COL2ROW",
     "matrix_pins": {
-        "cols": ["B2", "B3", "B1", "B0", "F7", "F0", "F1", "F4", "F5", "F6"],
-        "rows": ["C6", "C7", "B5", "B6", "D7", "B4", "D4", "D6", "B7", "E6"]
+        "cols": ["B14", "B6", "A0", "B1", "B0", "A7", "A6", "A5", "A4", "A3"],
+        "rows": ["A10", "A9", "A8", "B7", "A2", "A1", "B12", "B11", "B10", "B2"]
     },
     "layout_aliases": {
         "LAYOUT_ext65": "LAYOUT"
