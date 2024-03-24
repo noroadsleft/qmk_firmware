@@ -2,7 +2,10 @@
     "keyboard_name": "Apollo87H rev. Gamma",
     "usb": {
         "pid": "0x8774",
-        "device_version": "0.0.3"
+        "device_version": "0.0.3",
+        "shared_endpoint": {
+            "keyboard": true
+        }
     },
     "rgb_matrix": {
         "animations": {
@@ -64,6 +67,18 @@
     "diode_direction": "COL2ROW",
     "processor": "STM32F411",
     "bootloader": "stm32-dfu",
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "rgb_matrix": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
     "layouts": {
         "LAYOUT_tkl_ansi": {
             "layout": [
