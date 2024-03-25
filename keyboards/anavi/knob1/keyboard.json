@@ -12,7 +12,8 @@
         "extrakey": true,
         "mousekey": false,
         "nkro": true,
-        "rgblight": true
+        "rgblight": true,
+        "oled": true
     },
     "rgblight": {
         "led_count": 1,
