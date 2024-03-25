@@ -21,6 +21,9 @@
         "encoder": true,
         "rgb_matrix": true
     },
+    "build": {
+        "lto": true
+    },
     "diode_direction": "COL2ROW",
     "matrix_pins": {
         "cols": ["F6", "F7", "D3", "D6"],
