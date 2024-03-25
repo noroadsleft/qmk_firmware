@@ -8,6 +8,23 @@
         "pid": "0x0001",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": false,
+        "mousekey": false,
+        "extrakey": false
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
+    "split": {
+        "enabled": true,
+        "transport": {
+            "protocol": "i2c"
+        }
+    },
     "matrix_pins": {
         "cols": ["B6", "B2", "B3", "B1", "F7"],
         "rows": ["D7", "E6", "B4", "B5"]
