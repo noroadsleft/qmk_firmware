@@ -8,6 +8,18 @@
         "device_version": "0.0.1",
         "max_power": 400
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "rgblight": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
     "indicators": {
         "caps_lock": "B2",
         "num_lock": "B3"
@@ -33,6 +45,11 @@
     },
     "processor": "atmega32u4",
     "bootloader": "atmel-dfu",
+    "matrix_pins": {
+        "cols": ["D4", "D6", "D7", "B4", "B5", "B6", "C6", "C7", "D5", "D5", "D5", "D5", "D5", "D5", "D5", "D5", "D5", "D5"],
+        "rows": ["F5", "F4", "F1", "F0", "F6"]
+    },
+    "diode_direction": "COL2ROW",
     "layouts": {
         "LAYOUT_all": {
             "layout": [
