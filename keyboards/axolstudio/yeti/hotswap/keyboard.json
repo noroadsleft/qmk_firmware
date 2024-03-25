@@ -8,6 +8,16 @@
     "pid": "0x9F9E",
     "device_version": "0.0.1"
   },
+  "features": {
+    "bootmagic": true,
+    "mousekey": true,
+    "extrakey": true,
+    "nkro": true,
+    "rgb_matrix": true
+  },
+  "build": {
+    "lto": true
+  },
   "rgb_matrix": {
     "animations": {
       "breathing": true,
