@@ -8,6 +8,15 @@
     "pid": "0xA1E5",
     "device_version": "0.0.8"
   },
+  "features": {
+    "bootmagic": false,
+    "mousekey": true,
+    "extrakey": true,
+    "console": true,
+    "command": true,
+    "nkro": true,
+    "unicode": true
+  },
   "layouts": {
     "LAYOUT": {
       "layout": [
