@@ -8,6 +8,22 @@
         "pid": "0x0B75",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "console": true,
+        "command": true,
+        "nkro": true,
+        "backlight": true,
+        "rgblight": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
     "matrix_pins": {
         "cols": ["A5", "B10", "A3", "A2", "B0", "A9", "C13", "B9", "B8", "B7", "B6", "B5", "B4", "B3", "A15", "A14"],
         "rows": ["A13", "B12", "B11", "B14", "A8", "A1"]
