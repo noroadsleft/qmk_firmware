@@ -8,6 +8,22 @@
         "pid": "0x5340",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": false,
+        "extrakey": true,
+        "command": true,
+        "nkro": true,
+        "rgblight": true,
+        "unicode": true,
+        "encoder": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
     "rgblight": {
         "hue_steps": 12,
         "saturation_steps": 12,
