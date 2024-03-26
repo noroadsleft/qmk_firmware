@@ -1,6 +1,10 @@
 {
     "keyboard_name": "Majestouch TKL \\\\w The Pegasus Hoof 2013",
     "diode_direction": "COL2ROW",
+    "matrix_size": {
+        "rows": 8,
+        "cols": 18
+    },
     "dynamic_keymap": {
         "layer_count": 3
     },

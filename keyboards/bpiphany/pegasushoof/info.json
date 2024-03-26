@@ -7,6 +7,13 @@
     "pid": "0x6050",
     "device_version": "1.0.4"
   },
+  "features": {
+    "bootmagic": true,
+    "mousekey": true,
+    "extrakey": true,
+    "console": true,
+    "command": true
+  },
   "processor": "atmega32u2",
   "bootloader": "atmel-dfu"
 }
