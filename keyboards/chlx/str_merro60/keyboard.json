@@ -8,6 +8,19 @@
         "pid": "0x0602",
         "device_version": "1.0.0"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "nkro": true,
+        "rgblight": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
     "rgblight": {
         "saturation_steps": 8,
         "brightness_steps": 8,
@@ -42,6 +55,7 @@
         "LAYOUT_iso": "LAYOUT_60_iso_split_bs_rshift",
         "LAYOUT_tsangan": "LAYOUT_60_tsangan_hhkb"
     },
+    "community_layouts": ["60_ansi", "60_ansi_split_bs_rshift", "60_hhkb", "60_iso", "60_tsangan_hhkb"],
     "layouts": {
         "LAYOUT_all": {
             "layout": [
