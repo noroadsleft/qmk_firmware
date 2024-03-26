@@ -7,6 +7,20 @@
     "pid": "0x1337",
     "device_version": "0.0.1"
   },
+  "features": {
+    "bootmagic": true,
+    "mousekey": true,
+    "extrakey": true,
+    "console": true,
+    "command": true,
+    "sleep_led": true
+  },
+  "qmk": {
+    "locking": {
+      "enabled": true,
+      "resync": true
+    }
+  },
   "indicators": {
     "caps_lock": "C5",
     "num_lock": "B7",
@@ -15,6 +29,10 @@
   },
   "processor": "atmega32u2",
   "bootloader": "atmel-dfu",
+  "matrix_size": {
+    "rows": 8,
+    "cols": 18
+  },
   "community_layouts": ["tkl_ansi", "tkl_iso"],
   "layout_aliases": {
     "LAYOUT": "LAYOUT_all"
