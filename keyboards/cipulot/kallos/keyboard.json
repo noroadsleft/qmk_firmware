@@ -8,6 +8,22 @@
         "pid": "0x6B7A",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": false,
+        "extrakey": true,
+        "nkro": true,
+        "rgblight": true
+    },
+    "build": {
+        "lto": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
     "rgblight": {
         "led_count": 13,
         "animations": {
