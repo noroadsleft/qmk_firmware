@@ -8,6 +8,21 @@
         "pid": "0x1849",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": false,
+        "extrakey": true,
+        "command": true,
+        "nkro": true,
+        "unicode": true,
+        "encoder": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
     "matrix_pins": {
         "cols": ["D3", "C2", "C5", "B0", "D6", "D5", "D4", "B4", "B5", "B6", "B7", "C7", "C6"],
         "rows": ["D2", "D1", "D0", "C4"]
