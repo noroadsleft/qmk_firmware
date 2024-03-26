@@ -8,6 +8,11 @@
         "pid": "0x6050",
         "device_version": "1.0.4"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true
+    },
     "indicators": {
         "caps_lock": "C6",
         "num_lock": "C5",
@@ -16,6 +21,11 @@
     },
     "processor": "atmega32u2",
     "bootloader": "atmel-dfu",
+    "matrix_size": {
+        "rows": 8,
+        "cols": 18
+    },
+    "diode_direction": "COL2ROW",
     "community_layouts": [
         "fullsize_ansi",
         "fullsize_iso"
