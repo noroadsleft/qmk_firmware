@@ -8,6 +8,20 @@
         "pid": "0x000F",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "console": true,
+        "command": true,
+        "nkro": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
     "matrix_pins": {
         "cols": ["C13", "C15", "B13", "B12", "B11", "B10", "B2", "B1", "B0", "A7", "A6", "A5", "A4", "A3", "A2"],
         "rows": ["C14", "A1", "B14", "B15", "A8"]
