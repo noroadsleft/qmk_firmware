@@ -6,7 +6,22 @@
     "usb": {
         "vid": "0x6369",
         "pid": "0x6B7F",
-        "device_version": "0.0.1"
+        "device_version": "0.0.1",
+        "shared_endpoint": {
+            "keyboard": true
+        }
+    },
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "nkro": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
     },
     "matrix_pins": {
         "cols": ["B10", "A0", "B9", "B8", "B7", "B6", "B5", "B4", "B3", "A15", "A14", "A4", "A3", "A2", "A1"],
