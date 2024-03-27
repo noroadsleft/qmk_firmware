@@ -8,6 +8,12 @@
         "pid": "0x005B",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": false,
+        "mousekey": false,
+        "extrakey": true,
+        "usb_hid": true
+    },
     "processor": "atmega32u4",
     "community_layouts": ["fullsize_ansi", "fullsize_iso", "fullsize_jis"],
     "layouts": {
