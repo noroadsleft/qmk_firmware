@@ -8,6 +8,14 @@
       "pid": "0x3333",
       "device_version": "1.0.0"
     },
+    "features": {
+        "bootmagic": false,
+        "mousekey": true,
+        "extrakey": true,
+        "console": true,
+        "command": true,
+        "nkro": true
+    },
     "processor": "atmega32u4",
     "bootloader": "lufa-dfu"
 }
