@@ -8,6 +8,12 @@
         "pid": "0x0C61",
         "device_version": "1.0.0"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "nkro": true
+    },
     "matrix_pins": {
         "cols": ["B4", "A15", "B3", "A1", "B6", "B5"],
         "rows": ["A0"]
