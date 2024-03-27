@@ -1,0 +1,10 @@
+{
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "nkro": true,
+        "rgblight": true,
+        "encoder": true
+    }
+}
