@@ -1,0 +1,8 @@
+{
+    "processor": "atmega32u4",
+    "bootloader": "atmel-dfu",
+    "features": {
+        "rgblight": true,
+        "encoder": true
+    }
+}

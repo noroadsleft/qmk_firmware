@@ -8,6 +8,17 @@
         "pid": "0x0012",
         "device_version": "0.0.3"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
     "rgblight": {
         "saturation_steps": 8,
         "brightness_steps": 8,

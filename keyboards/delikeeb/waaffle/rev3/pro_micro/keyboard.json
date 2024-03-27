@@ -1,0 +1,8 @@
+{
+    "processor": "atmega32u4",
+    "bootloader": "caterina",
+    "features": {
+        "rgblight": false,
+        "encoder": false
+    }
+}
