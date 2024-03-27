@@ -8,6 +8,21 @@
         "pid": "0x4353",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": false,
+        "mousekey": true,
+        "extrakey": true,
+        "console": true,
+        "command": true,
+        "sleep_led": true,
+        "nkro": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
     "processor": "STM32F103",
     "bootloader": "stm32duino",
     "layouts": {
