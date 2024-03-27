@@ -8,6 +8,11 @@
         "pid": "0x0000",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": false,
+        "mousekey": false,
+        "extrakey": false
+    },
     "processor": "at90usb1286",
     "bootloader": "halfkay",
     "diode_direction": "ROW2COL",
