@@ -8,6 +8,18 @@
         "pid": "0x0009",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "oled": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
     "matrix_pins": {
         "cols": ["F7", "B1", "B3", "B2", "B6"],
         "rows": ["B5", "B4"]
