@@ -3,6 +3,13 @@
   "manufacturer": "QMK",
   "url": "",
   "maintainer": "qmk",
+  "features": {
+    "bootmagic": false,
+    "mousekey": true,
+    "extrakey": true,
+    "nkro": true,
+    "ps2": true
+  },
   "usb": {
     "vid": "0xFEED",
     "pid": "0x6535",
