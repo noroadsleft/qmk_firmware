@@ -9,6 +9,11 @@
     "device_version": "0.0.2",
     "max_power": 100
   },
+  "features": {
+    "bootmagic": false,
+    "mousekey": true,
+    "extrakey": true
+  },
   "matrix_pins": {
     "cols": ["B0", "D7", "D6", "D5", "B2", "B1", "C0", "C1", "C2", "C3", "D1", "D0"],
     "rows": ["B4", "B5", "B3", "D4"]
