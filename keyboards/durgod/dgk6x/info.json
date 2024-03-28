@@ -1,4 +1,14 @@
 {
+    "features": {
+        "bootmagic": true,
+        "mousekey": false,
+        "extrakey": true,
+        "nkro": true,
+        "rgb_matrix": true
+    },
+    "build": {
+        "lto": true
+    },
     "indicators": {
         "caps_lock": "C4",
         "scroll_lock": "A8",
