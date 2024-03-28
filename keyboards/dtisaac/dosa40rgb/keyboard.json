@@ -8,6 +8,16 @@
         "pid": "0x4973",
         "device_version": "0.0.4"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": false,
+        "extrakey": false,
+        "bluetooth": true,
+        "rgb_matrix": true
+    },
+    "build": {
+        "lto": true
+    },
     "bluetooth": {
         "driver": "bluefruit_le"
     },
