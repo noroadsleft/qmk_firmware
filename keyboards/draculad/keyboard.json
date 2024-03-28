@@ -8,6 +8,19 @@
         "pid": "0x1B1E",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": false,
+        "mousekey": true,
+        "extrakey": true,
+        "nkro": true,
+        "rgblight": true,
+        "oled": true,
+        "wpm": true,
+        "encoder": true
+    },
+    "build": {
+        "lto": true
+    },
     "rgblight": {
         "saturation_steps": 8,
         "brightness_steps": 8,
@@ -36,6 +49,7 @@
         ]
     },
     "split": {
+        "enabled": true,
         "soft_serial_pin": "D2",
         "encoder": {
             "right": {
