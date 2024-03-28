@@ -8,6 +8,15 @@
         "pid": "0x4A46",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": false,
+        "extrakey": false,
+        "console": true,
+        "command": true,
+        "backlight": true,
+        "rgblight": true
+    },
     "backlight": {
         "driver": "custom",
         "levels": 1
