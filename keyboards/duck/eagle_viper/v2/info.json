@@ -6,6 +6,15 @@
         "pid": "0x4556",
         "device_version": "0.0.2"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": false,
+        "extrakey": true,
+        "command": true,
+        "nkro": true,
+        "backlight": true,
+        "rgblight": true
+    },
     "backlight": {
         "driver": "custom"
     },
