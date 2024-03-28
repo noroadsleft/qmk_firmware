@@ -3,6 +3,16 @@
         "pid": "0x1221",
         "device_version": "2.1.0"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "nkro": true,
+        "rgb_matrix": true
+    },
+    "build": {
+        "lto": true
+    },
     "rgb_matrix": {
         "animations": {
             "alphas_mods": true,
