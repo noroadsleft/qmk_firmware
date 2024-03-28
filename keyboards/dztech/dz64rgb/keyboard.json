@@ -8,6 +8,16 @@
         "pid": "0x1013",
         "device_version": "0.0.2"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": false,
+        "extrakey": true,
+        "nkro": true,
+        "rgb_matrix": true
+    },
+    "build": {
+        "lto": true
+    },
     "rgb_matrix": {
         "animations": {
             "alphas_mods": true,
@@ -50,6 +60,7 @@
     "diode_direction": "COL2ROW",
     "processor": "atmega32u4",
     "bootloader": "lufa-ms",
+    "community_layouts": ["64_ansi"],
     "layouts": {
         "LAYOUT_64_ansi": {
             "layout": [
