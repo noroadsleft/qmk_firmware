@@ -8,6 +8,14 @@
         "pid": "0x7342",
         "device_version": "0.0.1"
     },
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "nkro": true,
+        "backlight": true,
+        "rgb_matrix": true
+    },
     "rgb_matrix": {
         "animations": {
             "alphas_mods": true,
