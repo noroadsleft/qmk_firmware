@@ -1,7 +1,15 @@
 {
     "usb": {
         "pid": "0x1120",
-        "device_version": "1.0.0"
+        "device_version": "1.0.0",
+        "no_startup_check": false
+    },
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "nkro": true,
+        "rgb_matrix": true
     },
     "rgb_matrix": {
         "animations": {
