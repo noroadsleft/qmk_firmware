@@ -59,6 +59,7 @@
         "driver": "custom"
     },
     "processor": "atmega32u4",
+    "frequency": 8000000,
     "bootloader": "qmk-dfu",
     "community_layouts": ["60_ansi", "60_iso", "60_hhkb", "60_ansi_split_bs_rshift", "60_tsangan_hhkb"],
     "layouts": {

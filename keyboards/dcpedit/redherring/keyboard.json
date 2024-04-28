@@ -28,6 +28,7 @@
         "rows": ["C6", "A6", "A7", "A4", "C7", "A5"]
     },
     "processor": "atmega32a",
+    "frequency": 16000000,
     "qmk": {
         "tap_keycode_delay": 10
     },

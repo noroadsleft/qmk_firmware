@@ -19,6 +19,7 @@
         "num_lock": "B5"
     },
     "processor": "atmega32a",
+    "frequency": 16000000,
     "bootloader": "usbasploader",
     "features": {
         "bootmagic": true,

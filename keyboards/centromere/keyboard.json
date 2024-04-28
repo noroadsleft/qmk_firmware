@@ -9,6 +9,7 @@
         "device_version": "0.0.1"
     },
     "processor": "atmega32u4",
+    "frequency": 8000000,
     "bootloader": "caterina",
     "features": {
         "bootmagic": false,

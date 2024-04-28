@@ -33,6 +33,7 @@
         }
     },
     "processor": "atmega32a",
+    "frequency": 16000000,
     "bootloader": "usbasploader",
     "layouts": {
         "LAYOUT_default": {

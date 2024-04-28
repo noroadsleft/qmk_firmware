@@ -19,6 +19,7 @@
     },
     "diode_direction": "COL2ROW",
     "processor": "atmega32a",
+    "frequency": 16000000,
     "bootloader": "usbasploader",
     "layouts": {
         "LAYOUT": {

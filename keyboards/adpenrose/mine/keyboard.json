@@ -27,6 +27,7 @@
         "cols": ["B0", "B1", "B2", "B3", "D0", "D1", "D5", "D6", "C6", "C5"]
     },
     "processor": "atmega32a",
+    "frequency": 16000000,
     "bootloader": "usbasploader",
     "layouts": {
         "LAYOUT_all": {
