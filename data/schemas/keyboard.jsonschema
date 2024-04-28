@@ -108,6 +108,11 @@
                 "unknown"
             ]
         },
+        "frequency": {
+            "type": "number",
+            "minimum": 1000000,
+            "multipleOf": 1000000
+        },
         "apa102": {
             "type": "object",
             "additionalProperties": false,
