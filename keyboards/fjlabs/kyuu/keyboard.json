@@ -36,6 +36,7 @@
         "pin": "C7"
     },
     "processor": "atmega32u4",
+    "frequency": 8000000,
     "bootloader": "atmel-dfu",
     "features": {
         "bootmagic": true,

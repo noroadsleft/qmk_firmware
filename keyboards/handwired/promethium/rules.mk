@@ -1,6 +1,3 @@
-# Processor frequency
-F_CPU = 8000000
-
 PS2_DRIVER = interrupt
 CUSTOM_MATRIX = yes
 

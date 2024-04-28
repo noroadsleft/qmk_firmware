@@ -20,6 +20,7 @@
         "matrix": [8, 0]
     },
     "processor": "atmega32u4",
+    "frequency": 8000000,
     "bootloader": "atmel-dfu",
     "features": {
         "bootmagic": false,

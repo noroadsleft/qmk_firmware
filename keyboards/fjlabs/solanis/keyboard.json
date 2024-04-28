@@ -33,6 +33,7 @@
         }
     },
     "processor": "at90usb646",
+    "frequency": 8000000,
     "bootloader": "atmel-dfu",
     "features": {
         "bootmagic": true,

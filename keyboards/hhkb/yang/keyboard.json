@@ -15,6 +15,7 @@
     "driver": "bluefruit_le"
   },
   "processor": "atmega32u4",
+  "frequency": 8000000,
   "bootloader": "lufa-ms",
   "features": {
     "bootmagic": true,
