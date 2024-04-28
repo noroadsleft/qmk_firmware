@@ -49,6 +49,7 @@
         ]
     },
     "processor": "atmega32u4",
+    "frequency": 8000000,
     "bootloader": "caterina",
     "layouts": {
         "LAYOUT": {
