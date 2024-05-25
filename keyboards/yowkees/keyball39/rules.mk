@@ -40,7 +40,7 @@ OLED_ENABLE = no                # Please Enable this in each keymaps.
 SRC += lib/oledkit/oledkit.c    # OLED utility for Keyball series.
 
 # Include common library
-SRC += lib/keyball/keyball.c
+#SRC += lib/keyball/keyball.c
 
 # Disable other features to squeeze firmware size
 SPACE_CADET_ENABLE = no
