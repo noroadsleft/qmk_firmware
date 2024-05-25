@@ -36,7 +36,7 @@ RGB_MATRIX_DRIVER = ws2812
 SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend
 
 # To support OLED
-OLED_ENABLE = no                # Please Enable this in each keymaps.
+OLED_ENABLE = yes
 #SRC += lib/oledkit/oledkit.c    # OLED utility for Keyball series.
 
 # Include common library
