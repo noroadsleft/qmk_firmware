@@ -558,7 +558,17 @@ void keyball_set_cpi(uint8_t cpi) {
     keyball.cpi_value   = cpi;
     keyball.cpi_changed = true;
     if (keyball.this_have_ball) {
-        pmw3360_cpi_set(cpi == 0 ? CPI_DEFAULT - 1 : cpi - 1);
+        // pmw3360_cpi_set(cpi == 0 ? CPI_DEFAULT - 1 : cpi - 1);
+        /**
+         * keyball_set_cpi() uses a range of 0 <= cpi <= 119, and the actual CPI
+         * value is ( cpi + 1 ) * 100. QMK's core PMW3360 driver uses the true
+         * CPI value internally, so we have to translate the Keyball's value to
+         * QMK's expected range.
+         *
+         * QMK's core driver also caps the range internally to a valid CPI
+         * value, so we don't need to do it here.
+         */
+        pmw33xx_set_cpi(0, (cpi + 1) * 100);
     }
 }
 
