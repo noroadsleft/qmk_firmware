@@ -24,7 +24,7 @@
         "sleep_led": false,
         "nkro": false,
         "backlight": false,
-        "rgblight": false,
+        "rgblight": true,
         "rgb_matrix": false,
         "audio": false,
         "oled": true,
