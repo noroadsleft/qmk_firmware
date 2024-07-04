@@ -20,37 +20,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 // ┌─────────────────────────────────────────────────┐
-// │ k e y   m a t r i x                             │
-// └─────────────────────────────────────────────────┘ 
-
-#define MATRIX_ROW_PINS { C6, D7, E6, B4 }
-#define MATRIX_COL_PINS { F6, F7, B1, B3, B2, B6 }
-#define DIODE_DIRECTION COL2ROW
-#define MATRIX_ROWS 8
-#define MATRIX_COLS 6
-#define DEBOUNCE 5
-
-
-// ┌─────────────────────────────────────────────────┐
 // │ s p l i t   c o m m u n i c a t i o n           │
 // └─────────────────────────────────────────────────┘ 
 
 #define USE_SERIAL
-#define SOFT_SERIAL_PIN D2
 #define SERIAL_USE_MULTI_TRANSACTION
 //#define SPLIT_LAYER_STATE_ENABLE
 //#define SPLIT_USB_DETECT
-
-
-// ┌─────────────────────────────────────────────────┐
-// │ e n c o d e r s                                 │
-// └─────────────────────────────────────────────────┘ 
-
-#define ENCODERS_PAD_A       { F5 }
-#define ENCODERS_PAD_B       { F4 }
-#define ENCODERS_PAD_A_RIGHT { F4 }
-#define ENCODERS_PAD_B_RIGHT { F5 }
-#define ENCODER_RESOLUTION 2
 
 
 // ┌─────────────────────────────────────────────────┐
@@ -68,9 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // │ r g b   l e d s                                 │
 // └─────────────────────────────────────────────────┘ 
 
-#define WS2812_DI_PIN D3
 #define RGBLED_NUM 42
-#define RGBLED_SPLIT { 21, 21 }
 #define RGB_MATRIX_LED_COUNT RGBLED_NUM
 
 #ifdef RGB_MATRIX_ENABLE
@@ -91,7 +65,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // └─────────────────────────────────────────────────┘ 
 
 #define AUDIO_PIN B5
-#define AUDIO_VOICES
 #define AUDIO_DAC_SAMPLE_MAX 4095U
 #define AUDIO_VOICE_DEFAULT butts_fader
 
