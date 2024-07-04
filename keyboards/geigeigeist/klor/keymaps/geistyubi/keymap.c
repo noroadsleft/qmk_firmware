@@ -26,9 +26,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#ifdef HAPTIC_ENABLE
-#include "drivers/haptic/DRV2605L.h"
-#endif //HAPTIC ENABLE
 
 /*
 #ifdef OLED_ENABLE
