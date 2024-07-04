@@ -8,7 +8,7 @@ BOOTLOADER = atmel-dfu
 #   change yes to no to disable
 #
 
-OLED_DRIVER = SSD1306
+OLED_DRIVER = ssd1306
 
 #HAPTIC FEEDBACK
 
