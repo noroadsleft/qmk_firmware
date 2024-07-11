@@ -1,5 +1,7 @@
-#pragma once
+// Copyright 2019 @worldspawn00
+// SPDX-License-Identifier: GPL-2.0-or-later
 
+#pragma once
 
 #define GRAVE_ESC_CTRL_OVERRIDE
 
