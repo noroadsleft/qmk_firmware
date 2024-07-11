@@ -36,11 +36,13 @@
         "levels": 3
     },
     "rgblight": {
-        "pin": "D2",
         "led_count": 8,
         "hue_steps": 8,
         "saturation_steps": 8,
         "brightness_steps": 8
+    },
+    "ws2812": {
+        "pin": "D2"
     },
     "layouts": {
         "LAYOUT_ortho_4x12": {
