@@ -1,16 +1,16 @@
 # KBDPad MKI
 
-Custom numpad.
+Custom numpad. The MKI shares the same ATmega32A and matrix layout as the newer V2 PCB (not to be confused with the MKII, which uses an ATmega32U2!).
 
 * Keyboard Maintainer: [MechMerlin](https://github.com/mechmerlin)
-* Hardware Supported: KBDPad MKI
-* Hardware Availability: [KBDfans](https://kbdfans.com/products/kbdfans-pad-custom-mechanical-keyboard-diy-kit)
+* Hardware Supported: KBDPad MKI, KBDPad V2
+* Hardware Availability: [KBDfans](https://kbdfans.com/collections/20/products/kbdfans-kbdpad-pcb-v2)
 
 Make example for this keyboard (after setting up your build environment):
 
     make kbdfans/kbdpad/mk1:default
 
-Flashing example for this keyboard ([after setting up the bootloadHID flashing environment](https://docs.qmk.fm/#/flashing_bootloadhid))
+Flashing example for this keyboard:
 
     make kbdfans/kbdpad/mk1:default:flash
 

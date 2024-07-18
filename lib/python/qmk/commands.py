@@ -1,132 +1,110 @@
 """Helper functions for commands.
 """
-import json
+import os
+import sys
+import shutil
 from pathlib import Path
 
 from milc import cli
+import jsonschema
 
-import qmk.keymap
-from qmk.path import is_keyboard, is_keymap_dir, under_qmk_firmware
+from qmk.constants import QMK_USERSPACE, HAS_QMK_USERSPACE
+from qmk.json_schema import json_load, validate
+from qmk.keyboard import keyboard_alias_definitions
+from qmk.util import maybe_exit
 
 
-def create_make_command(keyboard, keymap, target=None):
-    """Create a make compile command
-
-    Args:
-
-        keyboard
-            The path of the keyboard, for example 'plank'
-
-        keymap
-            The name of the keymap, for example 'algernon'
-
-        target
-            Usually a bootloader.
-
-    Returns:
-
-        A command that can be run to make the specified keyboard and keymap
+def find_make():
+    """Returns the correct make command for this environment.
     """
-    make_args = [keyboard, keymap]
+    make_cmd = os.environ.get('MAKE')
 
-    if target:
-        make_args.append(target)
+    if not make_cmd:
+        make_cmd = 'gmake' if shutil.which('gmake') else 'make'
 
-    return ['make', ':'.join(make_args)]
+    return make_cmd
 
 
-def compile_configurator_json(user_keymap, bootloader=None):
-    """Convert a configurator export JSON file into a C file
-
-    Args:
-
-        configurator_filename
-            The configurator JSON export file
-
-        bootloader
-            A bootloader to flash
-
-    Returns:
-
-        A command to run to compile and flash the C file.
+def get_make_parallel_args(parallel=1):
+    """Returns the arguments for running the specified number of parallel jobs.
     """
-    # Write the keymap C file
-    qmk.keymap.write(user_keymap['keyboard'], user_keymap['keymap'], user_keymap['layout'], user_keymap['layers'])
+    parallel_args = []
 
-    # Return a command that can be run to make the keymap and flash if given
-    if bootloader is None:
-        return create_make_command(user_keymap['keyboard'], user_keymap['keymap'])
-    return create_make_command(user_keymap['keyboard'], user_keymap['keymap'], bootloader)
+    if int(parallel) <= 0:
+        # 0 or -1 means -j without argument (unlimited jobs)
+        parallel_args.append('--jobs')
+    elif int(parallel) > 1:
+        parallel_args.append('--jobs=' + str(parallel))
 
+    if int(parallel) != 1:
+        # If more than 1 job is used, synchronize parallel output by target
+        parallel_args.append('--output-sync=target')
 
-def find_keyboard_keymap():
-    """Returns `(keyboard_name, keymap_name)` based on the user's current environment.
-
-    This determines the keyboard and keymap name using the following precedence order:
-
-        * Command line flags (--keyboard and --keymap)
-        * Current working directory
-            * `keyboards/<keyboard_name>`
-            * `keyboards/<keyboard_name>/keymaps/<keymap_name>`
-            * `layouts/**/<keymap_name>`
-            * `users/<keymap_name>`
-        * Configuration
-            * cli.config.<subcommand>.keyboard
-            * cli.config.<subcommand>.keymap
-    """
-    # Check to make sure their copy of MILC supports config_source
-    if not hasattr(cli, 'config_source'):
-        cli.log.error("Your QMK CLI is out of date. Please upgrade using pip3 or your package manager.")
-        exit(1)
-
-    # State variables
-    relative_cwd = under_qmk_firmware()
-    keyboard_name = ""
-    keymap_name = ""
-
-    # If the keyboard or keymap are passed as arguments use that in preference to anything else
-    if cli.config_source[cli._entrypoint.__name__]['keyboard'] == 'argument':
-        keyboard_name = cli.config[cli._entrypoint.__name__]['keyboard']
-    if cli.config_source[cli._entrypoint.__name__]['keymap'] == 'argument':
-        keymap_name = cli.config[cli._entrypoint.__name__]['keymap']
-
-    if not keyboard_name or not keymap_name:
-        # If we don't have a keyboard_name and keymap_name from arguments try to derive one or both
-        if relative_cwd and relative_cwd.parts and relative_cwd.parts[0] == 'keyboards':
-            # Try to determine the keyboard and/or keymap name
-            current_path = Path('/'.join(relative_cwd.parts[1:]))
-
-            if current_path.parts[-2] == 'keymaps':
-                if not keymap_name:
-                    keymap_name = current_path.parts[-1]
-                if not keyboard_name:
-                    keyboard_name = '/'.join(current_path.parts[:-2])
-            elif not keyboard_name and is_keyboard(current_path):
-                keyboard_name = str(current_path)
-
-        elif relative_cwd and relative_cwd.parts and relative_cwd.parts[0] == 'layouts':
-            # Try to determine the keymap name from the community layout
-            if is_keymap_dir(relative_cwd) and not keymap_name:
-                keymap_name = relative_cwd.name
-
-        elif relative_cwd and relative_cwd.parts and relative_cwd.parts[0] == 'users':
-            # Try to determine the keymap name based on which userspace they're in
-            if not keymap_name and len(relative_cwd.parts) > 1:
-                keymap_name = relative_cwd.parts[1]
-
-    # If we still don't have a keyboard and keymap check the config
-    if not keyboard_name and cli.config[cli._entrypoint.__name__]['keyboard']:
-        keyboard_name = cli.config[cli._entrypoint.__name__]['keyboard']
-
-    if not keymap_name and cli.config[cli._entrypoint.__name__]['keymap']:
-        keymap_name = cli.config[cli._entrypoint.__name__]['keymap']
-
-    return (keyboard_name, keymap_name)
+    return parallel_args
 
 
 def parse_configurator_json(configurator_file):
     """Open and parse a configurator json export
     """
-    user_keymap = json.load(configurator_file)
+    user_keymap = json_load(configurator_file)
+    # Validate against the jsonschema
+    try:
+        validate(user_keymap, 'qmk.keymap.v1')
 
+    except jsonschema.ValidationError as e:
+        cli.log.error(f'Invalid JSON keymap: {configurator_file} : {e.message}')
+        maybe_exit(1)
+
+    keyboard = user_keymap['keyboard']
+    aliases = keyboard_alias_definitions()
+
+    while keyboard in aliases:
+        last_keyboard = keyboard
+        keyboard = aliases[keyboard].get('target', keyboard)
+        if keyboard == last_keyboard:
+            break
+
+    user_keymap['keyboard'] = keyboard
     return user_keymap
+
+
+def build_environment(args):
+    """Common processing for cli.args.env
+    """
+    envs = {}
+    for env in args:
+        if '=' in env:
+            key, value = env.split('=', 1)
+            envs[key] = value
+        else:
+            cli.log.warning('Invalid environment variable: %s', env)
+
+    if HAS_QMK_USERSPACE:
+        envs['QMK_USERSPACE'] = Path(QMK_USERSPACE).resolve()
+
+    return envs
+
+
+def in_virtualenv():
+    """Check if running inside a virtualenv.
+    Based on https://stackoverflow.com/a/1883251
+    """
+    active_prefix = getattr(sys, "base_prefix", None) or getattr(sys, "real_prefix", None) or sys.prefix
+    return active_prefix != sys.prefix
+
+
+def dump_lines(output_file, lines, quiet=True):
+    """Handle dumping to stdout or file
+    Creates parent folders if required
+    """
+    generated = '\n'.join(lines) + '\n'
+    if output_file and output_file.name != '-':
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        if output_file.exists():
+            output_file.replace(output_file.parent / (output_file.name + '.bak'))
+        output_file.write_text(generated, encoding='utf-8')
+
+        if not quiet:
+            cli.log.info(f'Wrote {output_file.name} to {output_file}.')
+    else:
+        print(generated)

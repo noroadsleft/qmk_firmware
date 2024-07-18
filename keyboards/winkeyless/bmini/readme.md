@@ -12,11 +12,11 @@ Make example for this keyboard (after setting up your build environment):
 
     make winkeyless/bmini:default
 
-Flashing example for this keyboard ([after setting up the bootloadHID flashing environment](https://docs.qmk.fm/#/flashing_bootloadhid))
+Flashing example for this keyboard:
 
     make winkeyless/bmini:default:flash
 
-This firmware can be flashed onto the KBDFans KBD75 Round 1 and Round 2 Bootmapper Client boards sold during the 2017 and early 2018 timeframe. 
+This firmware can also be flashed onto the KBDFans KBD75 Round 1 Bootmapper Client boards sold during the 2017 and early 2018 timeframe. 
 
 **Reset Key**: Hold down the bottom left most key located at `K00`, commonly programmed as Left Control while plugging in the keyboard.
 

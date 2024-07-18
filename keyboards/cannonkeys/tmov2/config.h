@@ -17,56 +17,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-/* USB Device descriptor parameter */
-#define VENDOR_ID       0xCA04
-#define PRODUCT_ID      0x70F2
-#define DEVICE_VER      0x0001
-/* in python2: list(u"whatever".encode('utf-16-le')) */
-/*   at most 32 characters or the ugly hack in usb_main.c borks */
-#define MANUFACTURER CannonKeys
-#define PRODUCT TMOv2
-#define DESCRIPTION TMOv2 Keyboard
+#define BACKLIGHT_PWM_DRIVER    PWMD3
+#define BACKLIGHT_PWM_CHANNEL   1
+#define BACKLIGHT_PAL_MODE      1
 
-/* key matrix size */
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 15
-
-#define MATRIX_COL_PINS { B14, A14, C13, C14, C15, F0, F1, B9, B8, B7, B6, B5, B4, B3, A15 }
-#define MATRIX_ROW_PINS { A10, A9, A8, B12 }
-#define DIODE_DIRECTION COL2ROW
-
-#define BACKLIGHT_LEVELS 6
-#define BACKLIGHT_BREATHING
-#define BREATHING_PERIOD 6
-
-/* define if matrix has ghost */
-//#define MATRIX_HAS_GHOST
-
-/* Set 0 if debouncing isn't needed */
-#define DEBOUNCE    5
-
-/* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-#define LOCKING_SUPPORT_ENABLE
-/* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
-
-#define RGBLIGHT_ANIMATIONS
-
-#define WS2812_LED_N 22
-#define RGBLED_NUM WS2812_LED_N
-#define PORT_WS2812     GPIOB
-#define PIN_WS2812      15
-#define WS2812_SPI SPID2
-
-// Backlight config starts after VIA's EEPROM usage,
-// dynamic keymaps start after this.
-#define VIA_EEPROM_CUSTOM_CONFIG_SIZE 1
-
-// VIA lighting is handled by the keyboard-level code
-#define VIA_CUSTOM_LIGHTING_ENABLE
-
-// Let VIA handle the QMK RGBLIGHT 
-#define VIA_QMK_RGBLIGHT_ENABLE
+#define WS2812_SPI_DRIVER SPID2
+#define WS2812_SPI_MOSI_PAL_MODE 0
+#define WS2812_SPI_SCK_PAL_MODE 0
+#define WS2812_SPI_SCK_PIN B13
 
 /*
  * Feature disable options
@@ -83,5 +41,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
-//#define NO_ACTION_MACRO
-//#define NO_ACTION_FUNCTION
