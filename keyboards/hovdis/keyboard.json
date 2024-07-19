@@ -1,0 +1,45 @@
+{
+    "keyboard_name": "Hovdis One-Key",
+    "manufacturer": "Hovdis",
+    "url": "",
+    "maintainer": "Hovdis",
+    "usb": {
+        "vid": "0x03A8",
+        "pid": "0xB17E",
+        "device_version": "0.0.1"
+    },
+    "processor": "atmega32u4",
+    "bootloader": "caterina",
+    "matrix_pins": {
+        "rows": ["B5"],
+        "cols": ["B6"]
+    },
+    "diode_direction": "COL2ROW",
+    "debounce": 5,
+    "features": {
+        "bootmagic": false,
+        "mousekey": true,
+        "extrakey": true,
+        "console": true,
+        "command": false,
+        "nkro": false,
+        "backlight": false,
+        "rgblight": false
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
+    "split": {
+        "soft_serial_pin": "D0"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label": "K00", "matrix": [0, 0], "x": 0, "y": 0}
+            ]
+        }
+    }
+}
