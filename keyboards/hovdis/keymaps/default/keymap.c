@@ -36,10 +36,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case MEMORY:
             if (record->event.pressed) {
-                // when keycode QMKBEST is pressed
+                // when keycode MEMORY is pressed
                 SEND_STRING("Do not forget me when I am gone.");
             } else {
-                // when keycode QMKBEST is released
+                // when keycode MEMORY is released
             }
             break;
     }
