@@ -74,17 +74,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    KC_TRNS,KC_TRNS,KC_TRNS,         KC_SPC                                ,KC_TRNS,KC_LEFT,KC_DOWN,KC_RGHT  \
 //`-------'-------'-------'-----------------------------------------------'-------'-------'-------'-------'
 ),
-[_OL] = LAYOUT_split_ansi( /* Other Function */
-//,-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.
- KC_GRV , KC_F1 , KC_F2 , KC_F3 , KC_F4 , KC_F5 , KC_F6 , KC_F7 , KC_F8 , KC_F9 ,KC_F10 ,KC_F11 ,KC_F12 , \
-//|-------'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-------------|
- RGB_TOG  ,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,    KC_ENT   , \
-//|---------'--,----'--,----'--,----'--,----'--,----'--,----'--,----'--,----'--,----'--,----'--,----------|
-  KC_TRNS    ,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_UP  , RESET    , \
-//|---------,--'------,'-------',------'-------'-------',------'-------',------'--,----'--,----'--,-------|
-  KC_TRNS , KC_TRNS , KC_TRNS ,         KC_SPC                          ,KC_TRNS  ,KC_TRNS,KC_TRNS,KC_TRNS  \
-//`---------'---------'---------'-----------------------'---------------'---------'-------'-------'-------'
-),
+#if defined(KEYBOARD_tg4x_redux_rev2) || defined(KEYBOARD_tg4x_redux_rev21)
+    [_OL] = LAYOUT_split_ansi( /* Other Function */
+        KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
+        RGB_TOG, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_ENT,
+        KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_UP,   QK_BOOT,
+        KC_TRNS, KC_TRNS, KC_TRNS,                   KC_SPC,           KC_SPC,           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+    ),
+#endif
 };
 
 /*
@@ -92,7 +89,7 @@ Tap dance stuff.
 td_1 is tab when hit, but caps lock when double tapped.
 td_2 is alt when hit, but windows key when double tapped
 */
-qk_tap_dance_action_t tap_dance_actions[] = {
+tap_dance_action_t tap_dance_actions[] = {
   [TD_1]  = ACTION_TAP_DANCE_DOUBLE(KC_TAB, KC_CAPS),
   [TD_2]  = ACTION_TAP_DANCE_DOUBLE(KC_LALT, KC_LGUI)
 // Other declarations would go here, separated by commas,
@@ -125,7 +122,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 void update_led(void) {
-  if (host_keyboard_leds() & (1<<USB_LED_CAPS_LOCK)) { //if caps lock is on
+  if ( host_keyboard_led_state().caps_lock == true ) { //if caps lock is on
     rgblight_sethsv_at(0,255,255, 0); //turns the first led red
     switch (biton32(layer_state)) {
       case _BL: //when the base layer is active, turns the LEDs red
@@ -158,7 +155,7 @@ void led_set_user(uint8_t usb_led) {
   update_led();
 }
 
-uint32_t layer_state_set_user(uint32_t state) {
+layer_state_t layer_state_set_user(layer_state_t state) {
   update_led();
   return state;
 }
