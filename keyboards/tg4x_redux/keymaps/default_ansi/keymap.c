@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 |---------,--'------,'-------',------'-------'-------'-------'-------'-------',------'--,----'--,-------|
 |   Ctl   |   Alt   |   Fn    |   Spc                                         |  Left   |  Up   | Right |
 `---------'---------'---------'-----------------------------------------------'---------'-------'-------'*/
-  [_BL] = LAYOUT_ANSI( /* Base */
+  [_BL] = LAYOUT_ansi( /* Base */
 //,-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.
    KC_ESC , KC_Q  , KC_W  , KC_E  , KC_R  , KC_T  , KC_Y  , KC_U  , KC_I  , KC_O  , KC_P  ,KC_SCLN,KC_BSPC, \
 //|-------'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-------------|
@@ -63,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 |---------,--'------,'-------',------'-------'-------'-------'-------'-------',------'--,----'--,-------|
 |   Ctl   |   Alt   |   Fn    |   Spc                                         |  Left   | Down  | Right |
 `---------'---------'---------'-----------------------------------------------'---------'-------'-------'*/
-  [_FL] = LAYOUT_ANSI( /* Function */
+  [_FL] = LAYOUT_ansi( /* Function */
 //,-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.
    KC_GRV , KC_1  , KC_2  , KC_3  , KC_4  , KC_5  , KC_6  , KC_7  , KC_8  , KC_9  , KC_0  ,KC_MINS,KC_DEL , \
 //|-------'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-------------|
@@ -74,24 +74,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS , KC_TRNS , KC_TRNS ,         KC_SPC                                ,  KC_LEFT,KC_DOWN,KC_RGHT  \
 //`---------'---------'---------'-----------------------------------------------'---------'-------'-------'
 ),
-[_OL] = LAYOUT_SPLIT_ANSI( /* Other Function */
-//,-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.
- KC_GRV , KC_F1 , KC_F2 , KC_F3 , KC_F4 , KC_F5 , KC_F6 , KC_F7 , KC_F8 , KC_F9 ,KC_F10 ,KC_F11 ,KC_F12 , \
-//|-------'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-------------|
- RGB_TOG  ,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,    KC_ENT   , \
-//|---------'--,----'--,----'--,----'--,----'--,----'--,----'--,----'--,----'--,----'--,----'--,----------|
-  KC_TRNS    ,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_UP  , RESET    , \
-//|---------,--'------,'-------',------'-------'-------',------'-------',------'--,----'--,----'--,-------|
-  KC_TRNS , KC_TRNS , KC_TRNS ,         KC_SPC                                ,  KC_TRNS,KC_TRNS,KC_TRNS  \
-//`---------'---------'---------'-----------------------'---------------'---------'-------'-------'-------'
-),
+    [_OL] = LAYOUT_split_ansi( /* Other Function */
+        KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  \
+        RGB_TOG, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_ENT,  \
+        KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_UP,   QK_BOOT, \
+        KC_TRNS, KC_TRNS, KC_TRNS,                   KC_SPC,           KC_SPC,           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS  \
+    ),
 };
 /*
 Tap dance stuff.
 td_1 is tab when hit, but caps lock when double tapped.
 td_2 is alt when hit, but windows key when double tapped
 */
-qk_tap_dance_action_t tap_dance_actions[] = {
+tap_dance_action_t tap_dance_actions[] = {
   [TD_1]  = ACTION_TAP_DANCE_DOUBLE(KC_TAB, KC_CAPS),
   [TD_2]  = ACTION_TAP_DANCE_DOUBLE(KC_LALT, KC_LGUI)
 // Other declarations would go here, separated by commas,
@@ -124,14 +119,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 void update_led(void) {
-  if (host_keyboard_leds() & (1<<USB_LED_CAPS_LOCK)) { //if caps lock is on
+  if ( host_keyboard_led_state().caps_lock == true ) { //if caps lock is on
     rgblight_sethsv_at(0,255,255, 0); //turns the first led red
     switch (biton32(layer_state)) {
       case _BL: //when the base layer is active, turns the LEDs red
         rgblight_sethsv_range(0,255,255,1,7);
         break;
       case _FL: //when the function layer is active, turns the LEDs cyan
-        rgblight_sethsv_range(180,255,255,1,7);
+        rgblight_sethsv_range(128,255,255,1,7);
         break;
       default: //if anything else is active, turns the LEDs off. isn't in use, mostly a fallback
         rgblight_sethsv(0,0,0);
@@ -141,10 +136,10 @@ void update_led(void) {
         rgblight_sethsv_at(0,0,0, 0);
         switch (biton32(layer_state)) { //same code as above
           case _BL:
-            rgblight_sethsv_range(50,190,125,1,7);
+            rgblight_sethsv_range(35,190,125,1,7);
             break;
           case _FL:
-            rgblight_sethsv_range(205,150,240,1,7);
+            rgblight_sethsv_range(145,150,240,1,7);
             break;
           default:
             rgblight_sethsv(0,0,0);
@@ -157,7 +152,7 @@ void led_set_user(uint8_t usb_led) {
   update_led();
 }
 
-uint32_t layer_state_set_user(uint32_t state) {
+layer_state_t layer_state_set_user(layer_state_t state) {
   update_led();
   return state;
 }
