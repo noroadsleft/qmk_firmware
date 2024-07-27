@@ -23,8 +23,7 @@
         "command": false,
         "nkro": true,
         "backlight": false,
-        "rgblight": true,
-        "tap_dance": true
+        "rgblight": true
     },
     "qmk": {
         "locking": {
