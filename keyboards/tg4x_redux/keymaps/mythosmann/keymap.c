@@ -81,7 +81,7 @@ Tap dance stuff.
 td_1 is tab when hit, but caps lock when double tapped.
 td_2 is alt when hit, but windows key when double tapped
 */
-qk_tap_dance_action_t tap_dance_actions[] = {
+tap_dance_action_t tap_dance_actions[] = {
   [TD_1]  = ACTION_TAP_DANCE_DOUBLE(KC_TAB, KC_CAPS),
   [TD_2]  = ACTION_TAP_DANCE_DOUBLE(KC_LALT, KC_LGUI)
 // Other declarations would go here, separated by commas,
@@ -114,18 +114,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 void update_led(void) {
-  if (host_keyboard_leds() & (1<<USB_LED_CAPS_LOCK)) {
+  if ( host_keyboard_led_state().caps_lock == true ) {
     //if caps lock is on
     rgblight_sethsv_at(0,255,255, 0);
     //turns the first led green
     switch (biton32(layer_state)) {
       case _BL:
       //when the base layer is active, turns the LEDs teal
-        rgblight_sethsv_range(50,190,125,1,7);
+        rgblight_sethsv_range(35,190,125,1,7);
         break;
       case _FL:
       //when the function layer is active, turns the LEDs purple
-        rgblight_sethsv_range(205,150,240,1,7);
+        rgblight_sethsv_range(145,150,240,1,7);
         break;
       default:
       //if anything else is active, turns the LEDs off. isn't in use, mostly a fallback
@@ -138,10 +138,10 @@ void update_led(void) {
         switch (biton32(layer_state)) {
           //same code as above
           case _BL:
-            rgblight_sethsv_range(50,190,125,1,7);
+            rgblight_sethsv_range(35,190,125,1,7);
             break;
           case _FL:
-            rgblight_sethsv_range(205,150,240,1,7);
+            rgblight_sethsv_range(145,150,240,1,7);
             break;
           default:
             rgblight_sethsv(0,0,0);
@@ -154,7 +154,7 @@ void led_set_user(uint8_t usb_led) {
   update_led();
 }
 
-uint32_t layer_state_set_user(uint32_t state) {
+layer_state_t layer_state_set_user(layer_state_t state) {
   update_led();
   return state;
 }
