@@ -1,2 +1,3 @@
-# The default keymap for tg4x
-This has a pretty basic layout and function layer, no media control, mouse control, or anything like that.
+# The default_ansi keymap for TG4x
+
+:warning: This keymap only works for rev2 and rev2.1 boards.
