@@ -1,87 +1,110 @@
 """Helper functions for commands.
 """
-import json
 import os
-import platform
-import subprocess
-import shlex
+import sys
 import shutil
+from pathlib import Path
 
-import qmk.keymap
+from milc import cli
+import jsonschema
+
+from qmk.constants import QMK_USERSPACE, HAS_QMK_USERSPACE
+from qmk.json_schema import json_load, validate
+from qmk.keyboard import keyboard_alias_definitions
+from qmk.util import maybe_exit
 
 
-def create_make_command(keyboard, keymap, target=None):
-    """Create a make compile command
-
-    Args:
-
-        keyboard
-            The path of the keyboard, for example 'plank'
-
-        keymap
-            The name of the keymap, for example 'algernon'
-
-        target
-            Usually a bootloader.
-
-    Returns:
-
-        A command that can be run to make the specified keyboard and keymap
+def find_make():
+    """Returns the correct make command for this environment.
     """
-    make_args = [keyboard, keymap]
-    make_cmd = 'gmake' if shutil.which('gmake') else 'make'
+    make_cmd = os.environ.get('MAKE')
 
-    if target:
-        make_args.append(target)
+    if not make_cmd:
+        make_cmd = 'gmake' if shutil.which('gmake') else 'make'
 
-    return [make_cmd, ':'.join(make_args)]
+    return make_cmd
 
 
-def compile_configurator_json(user_keymap, bootloader=None):
-    """Convert a configurator export JSON file into a C file
-
-    Args:
-
-        configurator_filename
-            The configurator JSON export file
-
-        bootloader
-            A bootloader to flash
-
-    Returns:
-
-        A command to run to compile and flash the C file.
+def get_make_parallel_args(parallel=1):
+    """Returns the arguments for running the specified number of parallel jobs.
     """
-    # Write the keymap C file
-    qmk.keymap.write(user_keymap['keyboard'], user_keymap['keymap'], user_keymap['layout'], user_keymap['layers'])
+    parallel_args = []
 
-    # Return a command that can be run to make the keymap and flash if given
-    if bootloader is None:
-        return create_make_command(user_keymap['keyboard'], user_keymap['keymap'])
-    return create_make_command(user_keymap['keyboard'], user_keymap['keymap'], bootloader)
+    if int(parallel) <= 0:
+        # 0 or -1 means -j without argument (unlimited jobs)
+        parallel_args.append('--jobs')
+    elif int(parallel) > 1:
+        parallel_args.append('--jobs=' + str(parallel))
+
+    if int(parallel) != 1:
+        # If more than 1 job is used, synchronize parallel output by target
+        parallel_args.append('--output-sync=target')
+
+    return parallel_args
 
 
 def parse_configurator_json(configurator_file):
     """Open and parse a configurator json export
     """
-    # FIXME(skullydazed/anyone): Add validation here
-    user_keymap = json.load(configurator_file)
+    user_keymap = json_load(configurator_file)
+    # Validate against the jsonschema
+    try:
+        validate(user_keymap, 'qmk.keymap.v1')
 
+    except jsonschema.ValidationError as e:
+        cli.log.error(f'Invalid JSON keymap: {configurator_file} : {e.message}')
+        maybe_exit(1)
+
+    keyboard = user_keymap['keyboard']
+    aliases = keyboard_alias_definitions()
+
+    while keyboard in aliases:
+        last_keyboard = keyboard
+        keyboard = aliases[keyboard].get('target', keyboard)
+        if keyboard == last_keyboard:
+            break
+
+    user_keymap['keyboard'] = keyboard
     return user_keymap
 
 
-def run(command, *args, **kwargs):
-    """Run a command with subprocess.run
+def build_environment(args):
+    """Common processing for cli.args.env
     """
-    platform_id = platform.platform().lower()
+    envs = {}
+    for env in args:
+        if '=' in env:
+            key, value = env.split('=', 1)
+            envs[key] = value
+        else:
+            cli.log.warning('Invalid environment variable: %s', env)
 
-    if isinstance(command, str):
-        raise TypeError('`command` must be a non-text sequence such as list or tuple.')
+    if HAS_QMK_USERSPACE:
+        envs['QMK_USERSPACE'] = Path(QMK_USERSPACE).resolve()
 
-    if 'windows' in platform_id:
-        safecmd = map(str, command)
-        safecmd = map(shlex.quote, safecmd)
-        safecmd = ' '.join(safecmd)
-        command = [os.environ['SHELL'], '-c', safecmd]
+    return envs
 
-    return subprocess.run(command, *args, **kwargs)
+
+def in_virtualenv():
+    """Check if running inside a virtualenv.
+    Based on https://stackoverflow.com/a/1883251
+    """
+    active_prefix = getattr(sys, "base_prefix", None) or getattr(sys, "real_prefix", None) or sys.prefix
+    return active_prefix != sys.prefix
+
+
+def dump_lines(output_file, lines, quiet=True):
+    """Handle dumping to stdout or file
+    Creates parent folders if required
+    """
+    generated = '\n'.join(lines) + '\n'
+    if output_file and output_file.name != '-':
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        if output_file.exists():
+            output_file.replace(output_file.parent / (output_file.name + '.bak'))
+        output_file.write_text(generated, encoding='utf-8')
+
+        if not quiet:
+            cli.log.info(f'Wrote {output_file.name} to {output_file}.')
+    else:
+        print(generated)

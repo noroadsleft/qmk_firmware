@@ -20,7 +20,7 @@
 #include "hotswap.h"
 
 #ifdef RGB_MATRIX_ENABLE
-const is31_led g_is31_leds[DRIVER_LED_TOTAL] = {
+const is31fl3731_led_t PROGMEM g_is31fl3731_leds[IS31FL3731_LED_COUNT] = {
 /* Refer to IS31 manual for these locations
  *   driver
  *   |  R location
@@ -137,7 +137,7 @@ led_config_t g_led_config = {
         {128, 48},{160, 48},{176, 48},{192, 48},{160, 64},{180, 64},{200, 64},{224, 64}
     },
     {
-        4, 4, 4, 4, 4, 4, 4, 1,
+        4, 4, 4, 4, 4, 4, 4, 4,
         1, 1,    4, 1, 1, 1, 1,
 
         1, 4, 4, 4, 4, 4, 4, 4,
@@ -151,6 +151,16 @@ led_config_t g_led_config = {
         4, 4, 4, 1, 1, 1, 1, 1,
     }
 };
+
+bool rgb_matrix_indicators_kb(void) {
+    if (!rgb_matrix_indicators_user()) {
+        return false;
+    }
+    if (host_keyboard_led_state().caps_lock) {
+        rgb_matrix_set_color(8, 0xFF, 0x0, 0x0);
+    }
+    return true;
+}
 
 #endif  //RGB_MATRIX_ENABLE
 
