@@ -16,6 +16,6 @@
 
 #pragma once
 
-#define AdafruitBleResetPin D4
-#define AdafruitBleCSPin B4
-#define AdafruitBleIRQPin E6
+#define BLUEFRUIT_LE_RST_PIN D4
+#define BLUEFRUIT_LE_CS_PIN B4
+#define BLUEFRUIT_LE_IRQ_PIN E6

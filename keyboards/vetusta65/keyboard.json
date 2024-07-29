@@ -23,14 +23,16 @@
         "console": false,
         "command": false,
         "nkro": true,
-        "backlight": false,
-        "rgblight": false
+        "bluetooth": true
     },
     "qmk": {
         "locking": {
             "enabled": true,
             "resync": true
         }
+    },
+    "bluetooth": {
+        "driver": "bluefruit_le"
     },
     "layouts": {
         "LAYOUT_65_ansi": {
