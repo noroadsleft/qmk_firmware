@@ -1,7 +1,7 @@
 {
-    "keyboard_name": "TG4x",
+    "keyboard_name": "TG4x v2.1",
     "manufacturer": "MythosMann",
-    "url": "https://github.com/MythosMann/tg4x",
+    "url": "https://github.com/MythosMann/tg4x/tree/v2.1",
     "maintainer": "qmk",
     "usb": {
         "vid": "0x4D4D",
